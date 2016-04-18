@@ -23,7 +23,9 @@ while($row = mysqli_fetch_assoc($result)){
         'ca' => $row['ca'],
         'exam' => $row['exam'],
         'final' => $row['final'],
-        'grade' => $row['grade']
+        'grade' => $row['grade'],
+        'session' => $row['session'],
+        'semester' => $row['semester']
     ];
     $i+=1;
 }

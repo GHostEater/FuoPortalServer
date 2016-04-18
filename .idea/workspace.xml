@@ -2,41 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/college/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/department/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecturer/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/major/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/allocation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/college/college.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/course.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/college/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/department/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecturer/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/major/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/department/department.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/college/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/department/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecturer/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/major/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecturer/lecturer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/major/major.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/result.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student/student.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/add.php" afterPath="$PROJECT_DIR$/result/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/edit.php" afterPath="$PROJECT_DIR$/result/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/result.php" afterPath="$PROJECT_DIR$/result/result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,6 +34,20 @@
       </PATH_ELEMENT>
       <PATH_ELEMENT>
         <option name="myItemId" value="MySQL - result_computation@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - result_computation@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="result_computation" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -111,13 +94,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/result/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="510">
-              <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
+            <state vertical-scroll-proportion="0.65102637" vertical-offset="118" max-vertical-offset="544">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
-                <marker date="1460772634710" expanded="true" signature="386:477" placeholder="insert into ..." />
+                <marker date="1460975830622" expanded="true" signature="441:532" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -126,7 +109,7 @@
       <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/result/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="408">
+            <state vertical-scroll-proportion="-8.0" vertical-offset="30" max-vertical-offset="408">
               <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
               <folding>
                 <marker date="1460772634726" expanded="true" signature="242:295" placeholder="DELETE FROM ..." />
@@ -138,23 +121,33 @@
       <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/result/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="510">
-              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state vertical-scroll-proportion="-6.8461537" vertical-offset="145" max-vertical-offset="544">
+              <caret line="19" column="27" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="27" />
               <folding>
-                <marker date="1460774210040" expanded="true" signature="386:530" placeholder="UPDATE major..." />
+                <marker date="1460975830615" expanded="true" signature="441:625" placeholder="UPDATE major..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/result/result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7053824" vertical-offset="176" max-vertical-offset="629">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state vertical-scroll-proportion="-11.0" vertical-offset="173" max-vertical-offset="663">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
-                <marker date="1460772634689" expanded="true" signature="223:243" placeholder="select * fro..result..." />
+                <marker date="1460975830593" expanded="true" signature="223:243" placeholder="select * fro..result..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6923075" vertical-offset="362" max-vertical-offset="782">
+              <caret line="30" column="37" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,16 +183,16 @@
         <option value="$PROJECT_DIR$/major/edit.php" />
         <option value="$PROJECT_DIR$/major/add.php" />
         <option value="$PROJECT_DIR$/major/major.php" />
-        <option value="$PROJECT_DIR$/result/add.php" />
         <option value="$PROJECT_DIR$/result/delete.php" />
-        <option value="$PROJECT_DIR$/result/result.php" />
         <option value="$PROJECT_DIR$/allocation/allocation.php" />
         <option value="$PROJECT_DIR$/allocation/edit.php" />
         <option value="$PROJECT_DIR$/lecturer/lecturer.php" />
         <option value="$PROJECT_DIR$/lecturer/add.php" />
         <option value="$PROJECT_DIR$/lecturer/edit.php" />
         <option value="$PROJECT_DIR$/lecturer/delete.php" />
+        <option value="$PROJECT_DIR$/result/result.php" />
         <option value="$PROJECT_DIR$/result/edit.php" />
+        <option value="$PROJECT_DIR$/result/add.php" />
       </list>
     </option>
   </component>
@@ -236,16 +229,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,6 +245,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="FuoPortalServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FuoPortalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FuoPortalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -287,20 +294,17 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -310,6 +314,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -325,6 +332,13 @@
       <option name="number" value="Default" />
       <updated>1460731441802</updated>
     </task>
+    <task id="LOCAL-00001" summary="commir">
+      <created>1460802570995</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460802570995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -339,17 +353,18 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32789558" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32626426" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -367,12 +382,64 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="commir" />
+    <option name="LAST_COMMIT_MESSAGE" value="commir" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lecturer/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="408">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <marker date="1460774210078" expanded="true" signature="260:306" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="510">
+          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
+          <folding>
+            <marker date="1460975830622" expanded="true" signature="441:532" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="408">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding>
+            <marker date="1460772634726" expanded="true" signature="242:295" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="510">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <marker date="1460975830615" expanded="true" signature="441:625" placeholder="UPDATE major..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460975830593" expanded="true" signature="223:243" placeholder="select * fro..result..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lecturer/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="595">
@@ -408,7 +475,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="510">
           <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
           <folding>
-            <marker date="1460772634710" expanded="true" signature="386:477" placeholder="insert into ..." />
+            <marker date="1460975830622" expanded="true" signature="441:532" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -428,7 +495,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="510">
           <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
-            <marker date="1460774210040" expanded="true" signature="386:530" placeholder="UPDATE major..." />
+            <marker date="1460975830615" expanded="true" signature="441:625" placeholder="UPDATE major..." />
           </folding>
         </state>
       </provider>
@@ -438,7 +505,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460772634689" expanded="true" signature="223:243" placeholder="select * fro..result..." />
+            <marker date="1460975830593" expanded="true" signature="223:243" placeholder="select * fro..result..." />
           </folding>
         </state>
       </provider>
@@ -510,13 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.730769" vertical-offset="205" max-vertical-offset="612">
           <caret line="30" column="15" selection-start-line="7" selection-start-column="0" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.230769" vertical-offset="362" max-vertical-offset="782">
-          <caret line="40" column="15" selection-start-line="7" selection-start-column="0" selection-end-line="40" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -697,19 +757,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/add.php">
+    <entry file="file://$PROJECT_DIR$/student/student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="510">
-          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
+        <state vertical-scroll-proportion="-5.6923075" vertical-offset="362" max-vertical-offset="782">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.0" vertical-offset="173" max-vertical-offset="663">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
-            <marker date="1460772634710" expanded="true" signature="386:477" placeholder="insert into ..." />
+            <marker date="1460975830593" expanded="true" signature="223:243" placeholder="select * fro..result..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="408">
+        <state vertical-scroll-proportion="-8.0" vertical-offset="30" max-vertical-offset="408">
           <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
           <folding>
             <marker date="1460772634726" expanded="true" signature="242:295" placeholder="DELETE FROM ..." />
@@ -719,20 +787,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/result/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="510">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state vertical-scroll-proportion="-6.8461537" vertical-offset="145" max-vertical-offset="544">
+          <caret line="19" column="27" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="27" />
           <folding>
-            <marker date="1460774210040" expanded="true" signature="386:530" placeholder="UPDATE major..." />
+            <marker date="1460975830615" expanded="true" signature="441:625" placeholder="UPDATE major..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result.php">
+    <entry file="file://$PROJECT_DIR$/result/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7053824" vertical-offset="176" max-vertical-offset="629">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.65102637" vertical-offset="118" max-vertical-offset="544">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <marker date="1460772634689" expanded="true" signature="223:243" placeholder="select * fro..result..." />
+            <marker date="1460975830622" expanded="true" signature="441:532" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

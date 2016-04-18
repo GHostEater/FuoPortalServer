@@ -17,6 +17,8 @@ $ca = $_GET['ca'];
 $exam = $_GET['exam'];
 $final = $_GET['final'];
 $grade = $_GET['grade'];
+$grade = $_GET['session'];
+$grade = $_GET['semester'];
 
 $query = "insert into result VALUES(NULL,'$course_code','$matric_no','$ca','$exam','$final','$grade')";
 mysqli_query($con,$query)or die("Unable To Execute");
