@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/127_0_0_1.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/add.php" afterPath="$PROJECT_DIR$/allocation/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/add.php" afterPath="$PROJECT_DIR$/course/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/department/add.php" afterPath="$PROJECT_DIR$/department/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/add.php" afterPath="$PROJECT_DIR$/lecturer/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/add.php" afterPath="$PROJECT_DIR$/result/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/add.php" afterPath="$PROJECT_DIR$/student/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/allocation.php" afterPath="$PROJECT_DIR$/allocation/allocation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/course.php" afterPath="$PROJECT_DIR$/course/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/delete.php" afterPath="$PROJECT_DIR$/allocation/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/delete.php" afterPath="$PROJECT_DIR$/course/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/delete.php" afterPath="$PROJECT_DIR$/lecturer/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/delete.php" afterPath="$PROJECT_DIR$/result/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/delete.php" afterPath="$PROJECT_DIR$/student/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/department/department.php" afterPath="$PROJECT_DIR$/department/department.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/edit.php" afterPath="$PROJECT_DIR$/allocation/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/edit.php" afterPath="$PROJECT_DIR$/course/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/department/edit.php" afterPath="$PROJECT_DIR$/department/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/edit.php" afterPath="$PROJECT_DIR$/lecturer/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/edit.php" afterPath="$PROJECT_DIR$/result/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/edit.php" afterPath="$PROJECT_DIR$/student/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/lecturer.php" afterPath="$PROJECT_DIR$/lecturer/lecturer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/major/major.php" afterPath="$PROJECT_DIR$/major/major.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/result.php" afterPath="$PROJECT_DIR$/result/result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/student.php" afterPath="$PROJECT_DIR$/student/student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -343,7 +314,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461152374805</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1461155640621</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1461155640621</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
