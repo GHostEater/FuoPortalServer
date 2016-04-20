@@ -10,7 +10,7 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 include("../conn.php");
-$id = $_GET['matric_no'];
+$id = $_GET['matricNo'];
 $firstName = $_GET['firstName'];
 $middleName = $_GET['middleName'];
 $lastName = $_GET['lastName'];
@@ -24,7 +24,7 @@ $dateBirth = $_GET['dateBirth'];
 $email = $_GET['email'];
 $address = $_GET['address'];
 
-$query = "UPDATE student SET firstName='$firstName',middleName='$middleName',lastName='$lastName',collegeId='$collegeId',departmentId='$departmentId',majorId='$majorId',level='$level',mode_of_entry='$mode_of_entry',session='$session',dateBirth='$dateBirth',email='$email',address='$address' where id = '$matric_no'";
+$query = "UPDATE student SET firstName='$firstName',middleName='$middleName',lastName='$lastName',collegeId='$collegeId',departmentId='$departmentId',majorId='$majorId',level='$level',mode_of_entry='$mode_of_entry',session='$session',dateBirth='$dateBirth',email='$email',address='$address' where id = '$matricNno'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

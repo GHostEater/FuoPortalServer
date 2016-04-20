@@ -10,8 +10,8 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 include("../conn.php");
-$course_code = $_GET['course_code'];
-$matric_no = $_GET['matric_no'];
+$code = $_GET['code'];
+$matricNo = $_GET['matricNo'];
 $ca = $_GET['ca'];
 $exam = $_GET['exam'];
 $final = $_GET['final'];
@@ -20,7 +20,7 @@ $grade = $_GET['session'];
 $grade = $_GET['semester'];
 
 
-$query = "UPDATE major SET course_code='$course_code',matric_no='$matric_no',ca='$ca',exam='$exam',final='$final',grade='$grade',session='$session',semester='$semester' where id = '$course_code'";
+$query = "UPDATE major SET code='$course_code',matricNo='$matric_no',ca='$ca',exam='$exam',final='$final',grade='$grade',session='$session',semester='$semester' where id = '$course_code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

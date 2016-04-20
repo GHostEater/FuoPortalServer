@@ -209,7 +209,7 @@ CREATE TABLE IF NOT EXISTS `student_info` (
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`matric_no`, `firstName`, `middleName`, `lastName`, `collegeId`, `departmentId`, `majorId`, `level`, `mode_of_entry`, `session`, `dob`, `email`, `address`, `password`) VALUES
+INSERT INTO `student_info` (matricNo, `firstName`, `middleName`, `lastName`, `collegeId`, `departmentId`, `majorId`, `level`, `mode_of_entry`, `session`, `dob`, `email`, `address`, `password`) VALUES
 ('NAS/12048', 'Olufemi', 'Paul', 'Lasisi', 1, 1, 1, '400', 'D/E', '2015/2016', '1992-11-26', 'lasisi28@gmail.com', 'Block 10 Plot 3, Parakin', 'punch8');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

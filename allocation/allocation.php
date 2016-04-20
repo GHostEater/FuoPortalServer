@@ -19,11 +19,11 @@ $resultsArr = "";
 while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
         'lecturer_id' => $row['lecturer_id'],
-        'course_code' => $row['course_code'],
-        'course_title' => $row['course_title'],
-        'course_unit' => $row['course_unit'],
-        'course_semester' => $row['course_semester'],
-        'course_level' => $course_level
+        'code' => $row['code'],
+        'title' => $row['title'],
+        'unit' => $row['unit'],
+        'semester' => $semester,
+        'level' => $level
             ];
     $i+=1;
 }

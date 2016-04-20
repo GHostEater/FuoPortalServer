@@ -11,18 +11,18 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$query = "select * from course_code";
+$query = "select * from code";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
 
 while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
-        'course_code' => $row['course_code'],
-        'course_title' => $row['course_title'],
-        'course_unit' => $row['course_unit'],
-        'course_semester' => $row['course_semester'],
-        'course_level' => $course_level,
+        'code' => $row['code'],
+        'title' => $row['title'],
+        'unit' => $row['unit'],
+        'semester' => $row['semester'],
+        'level' => $level,
         'prequisiteFor' => $prequisiteFor
     ];
     $i+=1;

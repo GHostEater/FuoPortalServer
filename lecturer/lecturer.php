@@ -18,7 +18,7 @@ $resultsArr = "";
 
 while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
-        'lecturer_id' =>$row['lecturer_id'],
+        'lecturerId' =>$row['lecturerId'],
         'lastName' => $row['last_name'],
         'middleName' => $row['middle_name'],
         'firstName' => $row['first_name'],
