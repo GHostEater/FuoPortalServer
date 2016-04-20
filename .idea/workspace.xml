@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/add.php" afterPath="$PROJECT_DIR$/allocation/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/add.php" afterPath="$PROJECT_DIR$/course/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/add.php" afterPath="$PROJECT_DIR$/lecturer/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/add.php" afterPath="$PROJECT_DIR$/result/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/add.php" afterPath="$PROJECT_DIR$/student/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/allocation.php" afterPath="$PROJECT_DIR$/allocation/allocation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/course.php" afterPath="$PROJECT_DIR$/course/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/delete.php" afterPath="$PROJECT_DIR$/course/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/delete.php" afterPath="$PROJECT_DIR$/lecturer/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/delete.php" afterPath="$PROJECT_DIR$/result/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/delete.php" afterPath="$PROJECT_DIR$/student/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/edit.php" afterPath="$PROJECT_DIR$/allocation/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/edit.php" afterPath="$PROJECT_DIR$/course/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/edit.php" afterPath="$PROJECT_DIR$/lecturer/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/edit.php" afterPath="$PROJECT_DIR$/result/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/edit.php" afterPath="$PROJECT_DIR$/student/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/lecturer.php" afterPath="$PROJECT_DIR$/lecturer/lecturer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/result.php" afterPath="$PROJECT_DIR$/result/result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result_computation.sql" afterPath="$PROJECT_DIR$/result_computation.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/student.php" afterPath="$PROJECT_DIR$/student/student.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -421,13 +400,20 @@
       <option name="project" value="LOCAL" />
       <updated>1460975861653</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1461152197574</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1461152197574</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1382" height="738" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -443,7 +429,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
