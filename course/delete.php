@@ -11,8 +11,8 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$course_code = $_GET['course_code'];
-$query = "DELETE FROM course WHERE code = '$code'";
+$code = $_GET['code'];
+$query = "DELETE FROM course_info WHERE code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

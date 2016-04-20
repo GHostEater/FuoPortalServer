@@ -17,10 +17,10 @@ $ca = $_GET['ca'];
 $exam = $_GET['exam'];
 $final = $_GET['final'];
 $grade = $_GET['grade'];
-$grade = $_GET['session'];
-$grade = $_GET['semester'];
+$session = $_GET['session'];
+$semester = $_GET['semester'];
 
-$query = "insert into result VALUES(NULL,'$code','$matricNo','$ca','$exam','$final','$grade')";
+$query = "insert into result_info VALUES('$code','$matricNo','$ca','$exam','$final','$grade','$session','$semester')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

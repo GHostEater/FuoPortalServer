@@ -11,7 +11,6 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$lecturerId = $_GET['lecturerId'];
 $firstName = $_GET['firstName'];
 $middleName = $_GET['middleName'];
 $lastName = $_GET['lastName'];
@@ -21,9 +20,12 @@ $collegeId = $_GET['collegeId'];
 $departmentId = $_GET['departmentId'];
 $phoneNumber = $_GET['phoneNumber'];
 $email = $_GET['email'];
+$password = $_GET['password'];
 $address = $_GET['address'];
 
-$query = "insert into lecturer VALUES(NULL,'$lecturerId',$firstName','$middleName','$lastName','$rank','$status','$collegeId','$departmentId',$phoneNumber','$email','$address')";
+$query = "insert into lecturer_info VALUES(NULL,'$firstName','$middleName','$lastName',
+                                          '$rank','$status','$collegeId','$departmentId',
+                                          '$phoneNumber','$email','$password','$address')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

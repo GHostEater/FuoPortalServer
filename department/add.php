@@ -12,9 +12,10 @@ header("Content-Type: application/json");
 include("../conn.php");
 
 $name = $_GET['name'];
+$collegeId = $_GET['collegeId'];
 $acronym = $_GET['acronym'];
 
-$query = "insert into department VALUES(NULL,'$name','$acronym')";
+$query = "insert into department VALUES(NULL,'$name','$collegeId','$acronym')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

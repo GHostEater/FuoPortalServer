@@ -41,12 +41,12 @@ if($n_rows > 0){
     }
 }
 else{
-    $query = "SELECT * FROM student_info WHERE matric_no = '$username'";
+    $query = "SELECT * FROM student_info WHERE matricNo = '$username'";
     $result = mysqli_query($con,$query)or die("Unable To Execute");
     $n_rows = mysqli_num_rows($result);
 
     if($n_rows > 0){
-        $query2 = "SELECT * FROM student_info WHERE matric_no = '$username' AND password = '$password'";
+        $query2 = "SELECT * FROM student_info WHERE matricNo = '$username' AND password = '$password'";
         $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
         $n_rows2 = mysqli_num_rows($result2);
 
@@ -75,8 +75,8 @@ else{
                             $major = $row5['name'];
 
                             $loginArr = [
-                                'id' => $row['matric_no'],
-                                'matric_no' => $row['matric_no'],
+                                'id' => $row['matricNo'],
+                                'matricNo' => $row['matricNo'],
                                 'lastName' => $row['lastName'],
                                 'middleName' => $row['middleName'],
                                 'firstName' => $row['firstName'],

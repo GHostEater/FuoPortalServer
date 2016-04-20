@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$query = "select * from code";
+$query = "select * from course_info";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
@@ -22,8 +22,8 @@ while($row = mysqli_fetch_assoc($result)){
         'title' => $row['title'],
         'unit' => $row['unit'],
         'semester' => $row['semester'],
-        'level' => $level,
-        'prequisiteFor' => $prequisiteFor
+        'level' => $row['level'],
+        'prerequisiteFor' => $row['prerequisiteFor']
     ];
     $i+=1;
 }

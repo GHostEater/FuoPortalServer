@@ -16,9 +16,9 @@ $title = $_GET['title'];
 $unit = $_GET['unit'];
 $semester = $_GET['semester'];
 $level = $_GET ['level'];
-$prequisiteFor = $_GET['prequisiteFor'];
+$prerequisiteFor = $_GET['prerequisiteFor'];
 
-$query = "insert into course VALUES(NULL,'$code','$title','$unit','$semester','$prequisiteFor')";
+$query = "insert into course_info VALUES('$code','$title','$unit','$semester','$prerequisiteFor','$level')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

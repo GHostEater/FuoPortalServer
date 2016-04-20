@@ -11,8 +11,8 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$lecturer_id = $_GET['lecturerId'];
-$query = "DELETE FROM lecturer WHERE id = '$lecturerId'";
+$id = $_GET['id'];
+$query = "DELETE FROM lecturer_info WHERE sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

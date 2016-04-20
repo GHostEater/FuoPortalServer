@@ -11,14 +11,13 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$id = $_GET['lecturer_id'];
 $code = $_GET['code'];
 $title = $_GET['title'];
 $unit = $_GET['unit'];
 $semester = $_GET['semester'];
 $level = $_GET ['level'];
 
-$query = "insert into allocation VALUES(NULL,'$lecturer_id','$code','$title','$unit','$semester','$level')";
+$query = "insert into allocation_info VALUES(NULL,'$code','$title','$unit','$semester','$level')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

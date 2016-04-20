@@ -16,11 +16,11 @@ $ca = $_GET['ca'];
 $exam = $_GET['exam'];
 $final = $_GET['final'];
 $grade = $_GET['grade'];
-$grade = $_GET['session'];
-$grade = $_GET['semester'];
+$session = $_GET['session'];
+$semester = $_GET['semester'];
 
 
-$query = "UPDATE major SET code='$course_code',matricNo='$matric_no',ca='$ca',exam='$exam',final='$final',grade='$grade',session='$session',semester='$semester' where id = '$course_code'";
+$query = "UPDATE result_info SET code='$code',matricNo='$matricNo',ca='$ca',exam='$exam',final='$final',grade='$grade',session='$session',semester='$semester' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

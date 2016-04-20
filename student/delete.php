@@ -12,7 +12,7 @@ header("Content-Type: application/json");
 include("../conn.php");
 
 $id = $_GET['id'];
-$query = "DELETE FROM student WHERE sn = '$matricNo'";
+$query = "DELETE FROM student_info WHERE matricNo = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

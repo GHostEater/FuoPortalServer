@@ -11,19 +11,19 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$query = "select * from allocation";
+$query = "select * from allocation_info";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
 
 while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
-        'lecturer_id' => $row['lecturer_id'],
+        'lecturerId' => $row['lecturerId'],
         'code' => $row['code'],
         'title' => $row['title'],
         'unit' => $row['unit'],
-        'semester' => $semester,
-        'level' => $level
+        'semester' => $row['semester'],
+        'level' => $row['level']
             ];
     $i+=1;
 }

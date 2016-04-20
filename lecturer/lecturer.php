@@ -11,27 +11,41 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$query = "select * from lecturer";
+$query = "select * from lecturer_info";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
 
 while($row = mysqli_fetch_assoc($result)){
-    $resultsArr[$i] = [
-        'lecturerId' =>$row['lecturerId'],
-        'lastName' => $row['last_name'],
-        'middleName' => $row['middle_name'],
-        'firstName' => $row['first_name'],
-        'rank' => $row['rank'],
-        'status' => $row['status'],
-        'college' => $college,
-        'department' => $department,
-        'phoneNumber' => $row['phoneNumber'],
-        'email' => $row['email'],
-        'address' => $row['address']
+    $collegeId = $row['collegeId'];
+    $departmentId = $row['departmentId'];
 
-    ];
-    $i+=1;
+    $query3 = "select * from college where sn = '$collegeId'";
+    $result3 = mysqli_query($con,$query3)or die("Unable To Execute");
+
+    while($row3 = mysqli_fetch_assoc($result3)){
+        $query4 = "select * from department where sn = '$departmentId'";
+        $result4 = mysqli_query($con,$query4)or die("Unable To Execute");
+
+        while($row4 = mysqli_fetch_assoc($result4)){
+            $college = $row3['name'];
+            $department = $row4['name'];
+
+            $resultsArr[$i] = [
+                'id' => $row['sn'],
+                'firstName' => $row['firstName'],
+                'middleName' => $row['middleName'],
+                'lastName' => $row['lastName'],
+                'rank' => $row['rank'],
+                'status' => $row['status'],
+                'college' => $college,
+                'department' => $department,
+                'phoneNumber' => $row['phone_number'],
+                'email' => $row['email']
+            ];
+        }
+    }
+    $i += 1;
 }
 header("HTTP/1.0 201 Success");
 echo json_encode($resultsArr);
