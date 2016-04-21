@@ -7,6 +7,16 @@
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="result_computation"/>
+    <table name="academicaffairs_info" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="firstName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="middleName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
+    </table>
     <table name="admin" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
@@ -23,6 +33,17 @@
       <column name="level" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
       <column name="semester" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="lecturerId"/>
+    </table>
+    <table name="co_info" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="firstName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="middleName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastNane" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="collegeId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
     </table>
     <table name="college" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -45,6 +66,13 @@
       <column name="name" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
       <column name="collegeId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="acronym" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
+    </table>
+    <table name="hod_info" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="lecturerId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="departmentId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
