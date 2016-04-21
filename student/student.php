@@ -45,15 +45,19 @@ while($row = mysqli_fetch_assoc($result)){
                     'lastName' => $row['lastName'],
                     'middleName' => $row['middleName'],
                     'firstName' => $row['firstName'],
+                    'collegeId' => $row['collegeId'],
                     'college' => $college,
+                    'departmentId' => $row['departmentId'],
                     'department' => $department,
+                    'majorId' => $row['majorId'],
                     'major' => $major,
                     'level' => $row['level'],
                     'modeOfEntry' => $row['mode_of_entry'],
                     'session' => $row['session'],
                     'dateBirth' => $row['dob'],
                     'email' => $row['email'],
-                    'address' => $row['address']
+                    'address' => $row['address'],
+                    'password' => $row['password']
                 ];
             }
         }

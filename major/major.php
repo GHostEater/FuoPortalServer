@@ -17,15 +17,16 @@ $i = 0;
 $resultsArr = "";
 
 while($row = mysqli_fetch_assoc($result)){
-    $collegeId = $row['collegeId'];
+    $departmentId = $row['departmentId'];
 
-    $query2 = "select * from major";
+    $query2 = "select * from department where sn='$departmentId'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
 
     while($row2 = mysqli_fetch_assoc($result2)){
         $resultsArr[$i] = [
             'id' => $row['sn'],
             'name' => $row['name'],
+            'departmentId' => $row['departmentId'],
             'department' => $row2['name']
         ];
     }
