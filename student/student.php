@@ -16,7 +16,7 @@ $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
 
-while($row = mysqli_fetch_assoc($result2)){
+while($row = mysqli_fetch_assoc($result)){
     $collegeId = $row['collegeId'];
     $departmentId = $row['departmentId'];
     $majorId = $row['majorId'];
