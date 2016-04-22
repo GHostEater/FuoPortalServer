@@ -18,7 +18,7 @@ $collegeId = $_GET['collegeId'];
 $email = $_GET['email'];
 $password = $_GET['password'];
 
-$query = "insert into co_info VALUES('$firstName','$middleName','$lastName','$collegeId','$email','$password')";
+$query = "insert into co_info VALUES(NULL,'$firstName','$middleName','$lastName','$collegeId','$email','$password')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
