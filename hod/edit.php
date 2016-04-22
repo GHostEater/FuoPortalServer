@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Bello J
- * Date: 4/16/2016
- * Time: 1:39 AM
+ * Date: 4/21/2016
+ * Time: 8:39 PM
  */
 ob_start();
 header("Access-Control-Allow-Origin: *");
@@ -11,10 +11,10 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 $id = $_GET['id'];
-$name = $_GET['name'];
-$acronym = $_GET['acronym'];
+$lecturerId = $_GET['lecturerId'];
+$departmentId = $_GET['departmentId'];
 
-$query = "UPDATE college_info SET name='$name',acronym='$acronym' where sn = '$id'";
+$query = "UPDATE hod_info SET lecturerId='$lecturerId',departmentId='$departmentId' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
