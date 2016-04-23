@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2016 at 02:31 PM
+-- Generation Time: Apr 23, 2016 at 12:52 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,6 +19,23 @@ SET time_zone = "+00:00";
 --
 -- Database: `result_computation`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `academicaffair_info`
+--
+
+CREATE TABLE IF NOT EXISTS `academicaffair_info` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(50) NOT NULL,
+  `middleName` varchar(50) NOT NULL,
+  `lastName` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -51,12 +68,28 @@ INSERT INTO `admin` (`sn`, `name`, `username`, `password`) VALUES
 CREATE TABLE IF NOT EXISTS `allocation_info` (
   `lecturerId` varchar(20) NOT NULL DEFAULT '',
   `code` varchar(20) DEFAULT NULL,
-  `title` varchar(45) DEFAULT NULL,
-  `unit` varchar(20) DEFAULT NULL,
-  `level` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
-  `semester` int(11) NOT NULL,
-  PRIMARY KEY (`lecturerId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `co_info`
+--
+
+CREATE TABLE IF NOT EXISTS `co_info` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(50) NOT NULL,
+  `middleName` varchar(50) NOT NULL,
+  `lastNane` varchar(50) NOT NULL,
+  `collegeId` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -121,6 +154,20 @@ INSERT INTO `department` (`sn`, `name`, `collegeId`, `acronym`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hod_info`
+--
+
+CREATE TABLE IF NOT EXISTS `hod_info` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `lecturerId` int(11) NOT NULL,
+  `departmentId` int(11) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `lecturer_info`
 --
 
@@ -150,6 +197,19 @@ INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rank`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `level`
+--
+
+CREATE TABLE IF NOT EXISTS `level` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `level` varchar(10) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `major`
 --
 
@@ -171,6 +231,19 @@ INSERT INTO `major` (`sn`, `name`, `departmentId`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `modeofentry`
+--
+
+CREATE TABLE IF NOT EXISTS `modeofentry` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `modeOfEntry` varchar(10) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `result_info`
 --
 
@@ -185,6 +258,19 @@ CREATE TABLE IF NOT EXISTS `result_info` (
   `semester` int(11) NOT NULL,
   PRIMARY KEY (`code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `session`
+--
+
+CREATE TABLE IF NOT EXISTS `session` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `session` varchar(20) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -215,6 +301,7 @@ CREATE TABLE IF NOT EXISTS `student_info` (
 --
 
 INSERT INTO `student_info` (`matricNo`, `firstName`, `middleName`, `lastName`, `collegeId`, `departmentId`, `majorId`, `level`, `mode_of_entry`, `session`, `dob`, `email`, `address`, `password`) VALUES
+('bello', 'be', 'bek', 'vgf', 0, 0, 0, '', '', '', '0000-00-00', 'fttyu', 'ffggghh', ''),
 ('NAS/12048', 'Olufemi', 'Paul', 'Lasisi', 1, 1, 1, '400', 'D/E', '2015/2016', '1992-11-26', 'lasisi28@gmail.com', 'Block 10 Plot 3, Parakin', 'punch8');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
