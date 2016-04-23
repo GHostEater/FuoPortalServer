@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2016 at 04:43 PM
+-- Generation Time: Apr 23, 2016 at 05:28 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -66,9 +66,9 @@ INSERT INTO `admin` (`sn`, `name`, `username`, `password`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `allocation_info` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
   `lecturerId` varchar(20) NOT NULL DEFAULT '',
   `code` varchar(20) DEFAULT NULL,
-  `sn` int(11) NOT NULL AUTO_INCREMENT,
   `allocatedBy` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
@@ -78,8 +78,8 @@ CREATE TABLE IF NOT EXISTS `allocation_info` (
 -- Dumping data for table `allocation_info`
 --
 
-INSERT INTO `allocation_info` (`lecturerId`, `code`, `sn`, `allocatedBy`) VALUES
-('1', 'MAT102', 5, 1);
+INSERT INTO `allocation_info` (`sn`, `lecturerId`, `code`, `allocatedBy`) VALUES
+(5, '1', 'MAT102', 1);
 
 -- --------------------------------------------------------
 
@@ -198,7 +198,7 @@ INSERT INTO `hod_info` (`sn`, `lecturerId`, `departmentId`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `lecturer_info` (
-  `sn` varchar(20) NOT NULL DEFAULT '',
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
   `firstName` varchar(45) DEFAULT NULL,
   `middleName` varchar(45) DEFAULT NULL,
   `lastName` varchar(45) DEFAULT NULL,
@@ -210,15 +210,17 @@ CREATE TABLE IF NOT EXISTS `lecturer_info` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `address` text NOT NULL,
-  PRIMARY KEY (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `lecturer_info`
 --
 
 INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rank`, `status`, `collegeId`, `departmentId`, `phoneNumber`, `email`, `password`, `address`) VALUES
-('1', 'Olufemi', 'Paul', 'Lasisi', 'reader', 'Permanent', 1, 1, '7037286040', 'femi.lasisi@fuo.edu.ng', 'punch8', '');
+(1, 'Pamilerin', 'Azeez', 'Idowu', 'lecturer II', 'Adjunct', 1, 1, '08062425791', 'pamilerin.idowu@fuo.edu.ng', 'punch8', 'Isale Osun'),
+(2, 'Olufemi', 'Paul', 'Lasisi', 'reader', 'Permanent', 1, 1, '7037286040', 'femi.lasisi@fuo.edu.ng', 'punch8', '');
 
 -- --------------------------------------------------------
 

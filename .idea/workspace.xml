@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/allocate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/courses.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/myAllocations.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/myCourses.php" />
-      <change type="DELETED" beforePath="C:\wamp\www\fuoPortal\allocation\allocation.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/127_0_0_1.sql" afterPath="$PROJECT_DIR$/127_0_0_1.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/allocate.php" afterPath="$PROJECT_DIR$/allocation/allocate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/edit.php" afterPath="$PROJECT_DIR$/course/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecturer/lecturer.php" afterPath="$PROJECT_DIR$/lecturer/lecturer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -63,6 +57,42 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
+        <option name="myItemId" value="lecturer_info" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - result_computation@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="result_computation" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hod_info" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - result_computation@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="result_computation" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
         <option name="myItemId" value="allocation_info" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
@@ -95,7 +125,6 @@
               <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding>
                 <marker date="1461414836292" expanded="true" signature="246:299" placeholder="select * fro..allocation_info..." />
-                <marker date="1461414836292" expanded="true" signature="435:1786" placeholder="..." />
                 <marker date="1461414836292" expanded="true" signature="478:522" placeholder="select * fro..course_info..." />
                 <marker date="1461414836292" expanded="true" signature="701:740" placeholder="select * fro..level..." />
                 <marker date="1461414836292" expanded="true" signature="940:990" placeholder="select * fro..lecturer_info..." />
@@ -119,13 +148,36 @@
       <file leaf-file-name="allocate.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/allocation/allocate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70071685" vertical-offset="0" max-vertical-offset="578">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.63978493" vertical-offset="0" max-vertical-offset="578">
+              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding>
-                <marker date="1461421411694" expanded="true" signature="321:369" placeholder="select * fro..allocation_info..." />
-                <marker date="1461421411694" expanded="true" signature="505:533" placeholder="insert into ..." />
-                <marker date="1461421411694" expanded="true" signature="505:582" placeholder="insert into ..." />
-                <marker date="1461421411694" expanded="true" signature="516:533" placeholder="select * fro..allocation_info..." />
+                <marker date="1461425255386" expanded="true" signature="321:369" placeholder="select * fro..allocation_info..." />
+                <marker date="1461425255386" expanded="true" signature="505:533" placeholder="insert into ..." />
+                <marker date="1461425255386" expanded="true" signature="505:582" placeholder="insert into ..." />
+                <marker date="1461425255386" expanded="true" signature="516:533" placeholder="select * fro..allocation_info..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="51.884617" vertical-offset="1893" max-vertical-offset="2992">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <folding>
+                <marker date="1461423686051" expanded="true" signature="286:334" placeholder="SELECT * FRO..admin..." />
+                <marker date="1461423686051" expanded="true" signature="486:561" placeholder="SELECT * FRO..admin..." />
+                <marker date="1461423686051" expanded="true" signature="1129:1184" placeholder="SELECT * FRO..student_info..." />
+                <marker date="1461423686051" expanded="true" signature="1336:1418" placeholder="SELECT * FRO..student_info..." />
+                <marker date="1461423686051" expanded="true" signature="1797:1840" placeholder="select * fro..college..." />
+                <marker date="1461423686051" expanded="true" signature="2018:2067" placeholder="select * fro..department..." />
+                <marker date="1461423686051" expanded="true" signature="2256:2295" placeholder="select * fro..major..." />
+                <marker date="1461423686051" expanded="true" signature="3890:3943" placeholder="SELECT * FRO..lecturer_info..." />
+                <marker date="1461423686051" expanded="true" signature="4111:4191" placeholder="SELECT * FRO..lecturer_info..." />
+                <marker date="1461423686051" expanded="true" signature="4601:4646" placeholder="select * fro..college..." />
+                <marker date="1461423686051" expanded="true" signature="4836:4887" placeholder="select * fro..department..." />
+                <marker date="1461423686051" expanded="true" signature="5091:5144" placeholder="SELECT * FRO..hod_info..." />
               </folding>
             </state>
           </provider>
@@ -186,10 +238,10 @@
         <option value="$PROJECT_DIR$/academicAffairs/add.php" />
         <option value="$PROJECT_DIR$/co/add.php" />
         <option value="$PROJECT_DIR$/allocation/allocation.php" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/allocation/myAllocations.php" />
         <option value="$PROJECT_DIR$/allocation/courses.php" />
         <option value="$PROJECT_DIR$/lecturer/lecturer.php" />
+        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/allocation/allocate.php" />
       </list>
     </option>
@@ -589,13 +641,20 @@
       <option name="project" value="LOCAL" />
       <updated>1461332037535</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="course allocation done!!!">
+      <created>1461422695205</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1461422695205</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33006537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -611,7 +670,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33006537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -635,7 +693,8 @@
     </option>
     <MESSAGE value="commir" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="course allocation done!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="course allocation done!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,32 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..hod_info">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..level">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
@@ -989,47 +1022,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allocation/myAllocations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.846153" vertical-offset="292" max-vertical-offset="1037">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <marker date="1461414836292" expanded="true" signature="246:299" placeholder="select * fro..allocation_info..." />
-            <marker date="1461414836292" expanded="true" signature="435:1786" placeholder="..." />
-            <marker date="1461414836292" expanded="true" signature="478:522" placeholder="select * fro..course_info..." />
-            <marker date="1461414836292" expanded="true" signature="701:740" placeholder="select * fro..level..." />
-            <marker date="1461414836292" expanded="true" signature="940:990" placeholder="select * fro..lecturer_info..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/course/course.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9390681" vertical-offset="3" max-vertical-offset="629">
           <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <marker date="1461237742054" expanded="true" signature="-1:-1" placeholder="select * fro..course_info..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="2193" max-vertical-offset="2975">
-          <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
-          <folding>
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..admin..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..admin..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..student_info..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..student_info..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="select * fro..college..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="select * fro..department..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="select * fro..major..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturer_info..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturer_info..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="select * fro..college..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="select * fro..department..." />
-            <marker date="1461411221889" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..hod_info..." />
           </folding>
         </state>
       </provider>
@@ -1072,16 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allocation/courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.153847" vertical-offset="20" max-vertical-offset="646">
-          <caret line="32" column="15" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="15" />
-          <folding>
-            <marker date="1461419506837" expanded="true" signature="245:295" placeholder="select * fro..course_info..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allocation/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
@@ -1105,15 +1093,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..hod_info">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="51.884617" vertical-offset="1893" max-vertical-offset="2992">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <marker date="1461423686051" expanded="true" signature="286:334" placeholder="SELECT * FRO..admin..." />
+            <marker date="1461423686051" expanded="true" signature="486:561" placeholder="SELECT * FRO..admin..." />
+            <marker date="1461423686051" expanded="true" signature="1129:1184" placeholder="SELECT * FRO..student_info..." />
+            <marker date="1461423686051" expanded="true" signature="1336:1418" placeholder="SELECT * FRO..student_info..." />
+            <marker date="1461423686051" expanded="true" signature="1797:1840" placeholder="select * fro..college..." />
+            <marker date="1461423686051" expanded="true" signature="2018:2067" placeholder="select * fro..department..." />
+            <marker date="1461423686051" expanded="true" signature="2256:2295" placeholder="select * fro..major..." />
+            <marker date="1461423686051" expanded="true" signature="3890:3943" placeholder="SELECT * FRO..lecturer_info..." />
+            <marker date="1461423686051" expanded="true" signature="4111:4191" placeholder="SELECT * FRO..lecturer_info..." />
+            <marker date="1461423686051" expanded="true" signature="4601:4646" placeholder="select * fro..college..." />
+            <marker date="1461423686051" expanded="true" signature="4836:4887" placeholder="select * fro..department..." />
+            <marker date="1461423686051" expanded="true" signature="5091:5144" placeholder="SELECT * FRO..hod_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allocation/courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.153847" vertical-offset="20" max-vertical-offset="646">
+          <caret line="32" column="15" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="15" />
+          <folding>
+            <marker date="1461419506837" expanded="true" signature="245:295" placeholder="select * fro..course_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allocation/myAllocations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.846153" vertical-offset="292" max-vertical-offset="1037">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding>
+            <marker date="1461414836292" expanded="true" signature="246:299" placeholder="select * fro..allocation_info..." />
+            <marker date="1461414836292" expanded="true" signature="478:522" placeholder="select * fro..course_info..." />
+            <marker date="1461414836292" expanded="true" signature="701:740" placeholder="select * fro..level..." />
+            <marker date="1461414836292" expanded="true" signature="940:990" placeholder="select * fro..lecturer_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/allocation/allocate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70071685" vertical-offset="0" max-vertical-offset="578">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.63978493" vertical-offset="0" max-vertical-offset="578">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
-            <marker date="1461421411694" expanded="true" signature="321:369" placeholder="select * fro..allocation_info..." />
-            <marker date="1461421411694" expanded="true" signature="505:533" placeholder="insert into ..." />
-            <marker date="1461421411694" expanded="true" signature="505:582" placeholder="insert into ..." />
-            <marker date="1461421411694" expanded="true" signature="516:533" placeholder="select * fro..allocation_info..." />
+            <marker date="1461425255386" expanded="true" signature="321:369" placeholder="select * fro..allocation_info..." />
+            <marker date="1461425255386" expanded="true" signature="505:533" placeholder="insert into ..." />
+            <marker date="1461425255386" expanded="true" signature="505:582" placeholder="insert into ..." />
+            <marker date="1461425255386" expanded="true" signature="516:533" placeholder="select * fro..allocation_info..." />
           </folding>
         </state>
       </provider>

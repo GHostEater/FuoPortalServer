@@ -30,7 +30,7 @@ if($n_rows > 0){
                 'id' => $row['sn'],
                 'username' => $row['username'],
                 'name' => $row['name'],
-                'systemRank' => 1
+                'sysRank' => 1
             ];
         }
         header("HTTP/1.0 201 Success");
@@ -88,7 +88,8 @@ else{
                                 'session' => $row['session'],
                                 'dateBirth' => $row['dob'],
                                 'email' => $row['email'],
-                                'address' => $row['address']
+                                'address' => $row['address'],
+                                'sysRank' => 5
                             ];
                         }
                     }
@@ -131,10 +132,10 @@ else{
                             $n_rows10 = mysqli_num_rows($result10);
 
                             if($n_rows10 > 0){
-                                $hod = 1;
+                                $sysRank = 3;
                             }
                             else{
-                                $hod = "";
+                                $sysRank = 4;
                             }
                             $college = $row3['name'];
                             $department = $row4['name'];
@@ -150,7 +151,7 @@ else{
                                 'department' => $department,
                                 'phoneNumber' => $row['phone_number'],
                                 'email' => $row['email'],
-                                'hod' => $hod
+                                'sysRank' => $sysRank
                             ];
                         }
                     }

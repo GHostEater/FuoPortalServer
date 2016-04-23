@@ -19,7 +19,7 @@ $result = mysqli_query($con,$query)or die("Unable To Execute");
 $nRows = mysqli_num_rows($result);
 
 if($nRows === 0){
-    $query2 = "insert into allocation_info VALUES('$lecturerId','$code',NULL,'$allocatedBy')";
+    $query2 = "insert into allocation_info VALUES(NULL,'$lecturerId','$code','$allocatedBy')";
     mysqli_query($con,$query2)or die("Unable To Execute");
     header("HTTP/1.0 201 Success");
 }
