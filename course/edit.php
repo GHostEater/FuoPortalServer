@@ -17,7 +17,7 @@ $semester = $_GET['semester'];
 $level = $_GET ['level'];
 $prerequisiteFor = $_GET['prerequisiteFor'];
 
-$query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semester='$semester',level='$level',prerequisiteFor='$prerequisiteFor' where code = '$code'";
+$query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semester',levelId='$level',prerequisiteFor='$prerequisiteFor' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

@@ -115,6 +115,7 @@ else{
                 while($row = mysqli_fetch_assoc($result2)){
                     $collegeId = $row['collegeId'];
                     $departmentId = $row['departmentId'];
+                    $lecturerId = $row['sn'];
 
                     $query3 = "select * from college where sn = '$collegeId'";
                     $result3 = mysqli_query($con,$query3)or die("Unable To Execute");
@@ -124,6 +125,17 @@ else{
                         $result4 = mysqli_query($con,$query4)or die("Unable To Execute");
 
                         while($row4 = mysqli_fetch_assoc($result4)){
+
+                            $query10 = "SELECT * FROM hod_info WHERE lecturerId='$lecturerId'";
+                            $result10 = mysqli_query($con,$query10)or die("Unable To Execute");
+                            $n_rows10 = mysqli_num_rows($result10);
+
+                            if($n_rows10 > 0){
+                                $hod = 1;
+                            }
+                            else{
+                                $hod = "";
+                            }
                             $college = $row3['name'];
                             $department = $row4['name'];
 
@@ -137,7 +149,8 @@ else{
                                 'college' => $college,
                                 'department' => $department,
                                 'phoneNumber' => $row['phone_number'],
-                                'email' => $row['email']
+                                'email' => $row['email'],
+                                'hod' => $hod
                             ];
                         }
                     }

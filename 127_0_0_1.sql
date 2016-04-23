@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2016 at 12:52 PM
+-- Generation Time: Apr 23, 2016 at 04:43 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -69,9 +69,17 @@ CREATE TABLE IF NOT EXISTS `allocation_info` (
   `lecturerId` varchar(20) NOT NULL DEFAULT '',
   `code` varchar(20) DEFAULT NULL,
   `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `allocatedBy` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `allocation_info`
+--
+
+INSERT INTO `allocation_info` (`lecturerId`, `code`, `sn`, `allocatedBy`) VALUES
+('1', 'MAT102', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -123,11 +131,22 @@ CREATE TABLE IF NOT EXISTS `course_info` (
   `code` varchar(20) NOT NULL DEFAULT '',
   `title` varchar(45) DEFAULT NULL,
   `unit` varchar(10) DEFAULT NULL,
-  `semester` varchar(10) DEFAULT NULL,
-  `prerequisiteFor` varchar(20) NOT NULL,
-  `level` int(11) NOT NULL,
+  `semesterId` varchar(10) DEFAULT NULL,
+  `prerequisiteFor` varchar(20) DEFAULT NULL,
+  `levelId` int(11) DEFAULT NULL,
+  `departmentId` int(11) NOT NULL,
   PRIMARY KEY (`code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `course_info`
+--
+
+INSERT INTO `course_info` (`code`, `title`, `unit`, `semesterId`, `prerequisiteFor`, `levelId`, `departmentId`) VALUES
+('CPS101', 'Introductory to Computer I', '3', '1', NULL, 1, 1),
+('CPS102', 'Introductory to Computer II', '3', '2', NULL, 1, 1),
+('MAT101', 'Elementary Mathematics I', '3', '1', NULL, 1, 1),
+('MAT102', 'Elementary Mathematics II', '3', '2', NULL, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -163,7 +182,14 @@ CREATE TABLE IF NOT EXISTS `hod_info` (
   `departmentId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `hod_info`
+--
+
+INSERT INTO `hod_info` (`sn`, `lecturerId`, `departmentId`) VALUES
+(1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -205,7 +231,17 @@ CREATE TABLE IF NOT EXISTS `level` (
   `level` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `level`
+--
+
+INSERT INTO `level` (`sn`, `level`) VALUES
+(1, '100'),
+(2, '200'),
+(3, '300'),
+(4, '400');
 
 -- --------------------------------------------------------
 
