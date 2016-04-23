@@ -7,7 +7,7 @@
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="result_computation"/>
-    <table name="academicaffairs_info" schema="" catalog="result_computation" type="TABLE">
+    <table name="academicAffair_info" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="firstName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <column name="middleName" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
