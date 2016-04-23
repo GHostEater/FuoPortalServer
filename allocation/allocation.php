@@ -20,10 +20,7 @@ while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
         'lecturerId' => $row['lecturerId'],
         'code' => $row['code'],
-        'title' => $row['title'],
-        'unit' => $row['unit'],
-        'semester' => $row['semester'],
-        'level' => $row['level']
+
             ];
     $i+=1;
 }
