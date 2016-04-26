@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2016 at 05:28 PM
+-- Generation Time: Apr 26, 2016 at 04:33 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `college` (
   `acronym` text NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `college`
@@ -135,6 +135,7 @@ CREATE TABLE IF NOT EXISTS `course_info` (
   `prerequisiteFor` varchar(20) DEFAULT NULL,
   `levelId` int(11) DEFAULT NULL,
   `departmentId` int(11) NOT NULL,
+  `majorId` int(11) NOT NULL,
   PRIMARY KEY (`code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -142,11 +143,10 @@ CREATE TABLE IF NOT EXISTS `course_info` (
 -- Dumping data for table `course_info`
 --
 
-INSERT INTO `course_info` (`code`, `title`, `unit`, `semesterId`, `prerequisiteFor`, `levelId`, `departmentId`) VALUES
-('CPS101', 'Introductory to Computer I', '3', '1', NULL, 1, 1),
-('CPS102', 'Introductory to Computer II', '3', '2', NULL, 1, 1),
-('MAT101', 'Elementary Mathematics I', '3', '1', NULL, 1, 1),
-('MAT102', 'Elementary Mathematics II', '3', '2', NULL, 1, 1);
+INSERT INTO `course_info` (`code`, `title`, `unit`, `semesterId`, `prerequisiteFor`, `levelId`, `departmentId`, `majorId`) VALUES
+('CPS101', 'Introductory to Computer I', '3', '1', NULL, 1, 1, 1),
+('MAT101', 'Elementary Mathematics I', '3', '1', NULL, 1, 1, 1),
+('MAT102', 'Elementary Mathematics II', '3', '2', NULL, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -158,17 +158,17 @@ CREATE TABLE IF NOT EXISTS `department` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
   `name` text NOT NULL,
   `collegeId` int(11) NOT NULL,
-  `acronym` varchar(20) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `department`
 --
 
-INSERT INTO `department` (`sn`, `name`, `collegeId`, `acronym`) VALUES
-(1, 'Department of Mathematics and Computer Sciences', 1, 'CPS');
+INSERT INTO `department` (`sn`, `name`, `collegeId`) VALUES
+(1, 'Department of Mathematics and Computer Sciences', 1),
+(2, 'Department of Chemical Sciences', 1);
 
 -- --------------------------------------------------------
 
@@ -221,6 +221,32 @@ CREATE TABLE IF NOT EXISTS `lecturer_info` (
 INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rank`, `status`, `collegeId`, `departmentId`, `phoneNumber`, `email`, `password`, `address`) VALUES
 (1, 'Pamilerin', 'Azeez', 'Idowu', 'lecturer II', 'Adjunct', 1, 1, '08062425791', 'pamilerin.idowu@fuo.edu.ng', 'punch8', 'Isale Osun'),
 (2, 'Olufemi', 'Paul', 'Lasisi', 'reader', 'Permanent', 1, 1, '7037286040', 'femi.lasisi@fuo.edu.ng', 'punch8', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lecturer_rank`
+--
+
+CREATE TABLE IF NOT EXISTS `lecturer_rank` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `rank` varchar(20) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lecturer_status`
+--
+
+CREATE TABLE IF NOT EXISTS `lecturer_status` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `status` varchar(10) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
