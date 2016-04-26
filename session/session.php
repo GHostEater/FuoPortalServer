@@ -21,9 +21,7 @@ while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
         'id' => $row['sn'],
         'session' => $row['session'],
-
     ];
-
     $i+=1;
 }
 header("HTTP/1.0 201 Success");

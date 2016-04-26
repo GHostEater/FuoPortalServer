@@ -13,11 +13,15 @@ include("../conn.php");
 $code = $_GET['code'];
 $title = $_GET['title'];
 $unit = $_GET['unit'];
-$semester = $_GET['semester'];
-$level = $_GET ['level'];
+$semesterId = $_GET['semesterId'];
+$levelId = $_GET ['levelId'];
+$departmentId = $_GET['departmentId'];
+$majorId = $_GET['majorId'];
 $prerequisiteFor = $_GET['prerequisiteFor'];
 
-$query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semester',levelId='$level',prerequisiteFor='$prerequisiteFor' where code = '$code'";
+$query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semesterId',
+levelId='$levelId',departmentId='$departmentId',majorId='$majorId',
+prerequisiteFor='$prerequisiteFor' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

@@ -14,7 +14,7 @@ $id = $_GET['id'];
 $name = $_GET['name'];
 $acronym = $_GET['acronym'];
 
-$query = "UPDATE college_info SET name='$name',acronym='$acronym' where sn = '$id'";
+$query = "UPDATE college SET name='$name',acronym='$acronym' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

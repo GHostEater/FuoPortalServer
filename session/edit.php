@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 $id = $_GET['id'];
-$modeOfEntry = $_GET['session'];
+$session = $_GET['session'];
 
 $query = "UPDATE session SET session='$session' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
