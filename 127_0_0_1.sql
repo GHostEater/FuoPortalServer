@@ -225,7 +225,7 @@ INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rank`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lecturer_rank`
+-- Table structure for table `lecturerRank`
 --
 
 CREATE TABLE IF NOT EXISTS `lecturer_rank` (
@@ -238,7 +238,7 @@ CREATE TABLE IF NOT EXISTS `lecturer_rank` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lecturer_status`
+-- Table structure for table `lecturerStatus`
 --
 
 CREATE TABLE IF NOT EXISTS `lecturer_status` (
