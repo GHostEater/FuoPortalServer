@@ -52,8 +52,7 @@ while($row = mysqli_fetch_assoc($result)){
         'departmentId' => $row['departmentId'],
         'department' => $department,
         'majorId' => $row['majorId'],
-        'major' => $major,
-        'prerequisiteFor' => $row['prerequisiteFor']
+        'major' => $major
     ];
     $i+=1;
 }
