@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2016 at 04:33 PM
+-- Generation Time: Apr 27, 2016 at 02:34 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -225,10 +225,10 @@ INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rank`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lecturerRank`
+-- Table structure for table `lecturerrank`
 --
 
-CREATE TABLE IF NOT EXISTS `lecturer_rank` (
+CREATE TABLE IF NOT EXISTS `lecturerrank` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
   `rank` varchar(20) NOT NULL,
   PRIMARY KEY (`sn`),
@@ -238,10 +238,10 @@ CREATE TABLE IF NOT EXISTS `lecturer_rank` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lecturerStatus`
+-- Table structure for table `lecturerstatus`
 --
 
-CREATE TABLE IF NOT EXISTS `lecturer_status` (
+CREATE TABLE IF NOT EXISTS `lecturerstatus` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
   `status` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
@@ -301,6 +301,21 @@ INSERT INTO `major` (`sn`, `name`, `departmentId`) VALUES
 CREATE TABLE IF NOT EXISTS `modeofentry` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
   `modeOfEntry` varchar(10) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `prerequistes`
+--
+
+CREATE TABLE IF NOT EXISTS `prerequistes` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(10) NOT NULL,
+  `prerequisite` varchar(10) NOT NULL,
+  `active` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
