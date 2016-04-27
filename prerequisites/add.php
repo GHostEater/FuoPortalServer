@@ -14,7 +14,7 @@ include("../conn.php");
 $code = $_GET['code'];
 $prerequisite = $_GET['prerequisite'];
 
-$query = "insert into major VALUES(NULL,'$code','$prerequisite')";
+$query = "insert into prerequisites VALUES(NULL,'$code','$prerequisite','1')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

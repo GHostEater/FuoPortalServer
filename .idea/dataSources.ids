@@ -125,7 +125,7 @@
     <table name="prerequisites" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="code" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
-      <column name="prerequite" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="prerequisite" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
       <column name="active" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>

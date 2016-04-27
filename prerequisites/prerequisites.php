@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$query = "select * from prerequistes";
+$query = "select * from prerequisites";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";

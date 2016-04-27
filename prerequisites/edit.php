@@ -14,7 +14,7 @@ $id = $_GET['id'];
 $code = $_GET['code'];
 $prerequisite = $_GET['prerequisite'];
 
-$query = "UPDATE major SET code='$code',prerequiste='$prerequisite' where sn = '$id'";
+$query = "UPDATE prerequisites SET code='$code',prerequisite='$prerequisite' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
