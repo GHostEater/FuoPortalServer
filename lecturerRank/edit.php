@@ -2,18 +2,18 @@
 /**
  * Created by PhpStorm.
  * User: Bello J
- * Date: 4/16/2016
- * Time: 1:40 AM
+ * Date: 4/26/2016
+ * Time: 7:56 PM
  */
 ob_start();
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 include("../conn.php");
-$lecturerId = $_GET['lecturerId'];
-$code = $_GET['code'];
+$id = $_GET['id'];
+$rank = $_GET['rank'];
 
-$query = "UPDATE allocation_info SET Id='$Id',lecturerId='$lecturerId',code='$code' where sn = '$Id'";
+$query = "UPDATE session SET lecturerRank='$lecturer_rank' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
