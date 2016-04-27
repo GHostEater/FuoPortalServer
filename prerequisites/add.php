@@ -11,8 +11,8 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 
-$name = $_GET['code'];
-$departmentId = $_GET['prerequisite'];
+$code = $_GET['code'];
+$prerequisite = $_GET['prerequisite'];
 
 $query = "insert into major VALUES(NULL,'$code','$prerequisite')";
 mysqli_query($con,$query)or die("Unable To Execute");

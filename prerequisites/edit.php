@@ -11,8 +11,8 @@ header("Content-Type: application/json");
 
 include("../conn.php");
 $id = $_GET['id'];
-$name = $_GET['code'];
-$departmentId = $_GET['prerequisite'];
+$code = $_GET['code'];
+$prerequisite = $_GET['prerequisite'];
 
 $query = "UPDATE major SET code='$code',prerequiste='$prerequisite' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
