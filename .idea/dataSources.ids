@@ -56,7 +56,6 @@
       <column name="title" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <column name="unit" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
       <column name="semesterId" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
-      <column name="prerequisiteFor" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
       <column name="levelId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="departmentId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="majorId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
@@ -92,13 +91,13 @@
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
-    <table name="lecturerrank" schema="" catalog="result_computation" type="TABLE">
+    <table name="lecturer_rank" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="rank" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
-    <table name="lecturerstatus" schema="" catalog="result_computation" type="TABLE">
+    <table name="lecturer_status" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="status" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="sn"/>
@@ -123,10 +122,10 @@
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
-    <table name="prerequistes" schema="" catalog="result_computation" type="TABLE">
+    <table name="prerequisites" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="code" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
-      <column name="prerequisite" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="prerequite" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
       <column name="active" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>

@@ -20,8 +20,7 @@ $majorId = $_GET['majorId'];
 $prerequisiteFor = $_GET['prerequisiteFor'];
 
 $query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semesterId',
-levelId='$levelId',departmentId='$departmentId',majorId='$majorId',
-prerequisiteFor='$prerequisiteFor' where code = '$code'";
+levelId='$levelId',departmentId='$departmentId',majorId='$majorId', where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
