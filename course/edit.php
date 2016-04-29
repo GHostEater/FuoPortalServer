@@ -17,10 +17,10 @@ $semesterId = $_GET['semesterId'];
 $levelId = $_GET ['levelId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
-$prerequisiteFor = $_GET['prerequisiteFor'];
+$type = $_GET['type'];
 
 $query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semesterId',
-levelId='$levelId',departmentId='$departmentId',majorId='$majorId' where code = '$code'";
+levelId='$levelId',departmentId='$departmentId',majorId='$majorId',type='$type' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

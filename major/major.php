@@ -15,6 +15,9 @@ $query = "select * from major";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
+$department = "";
+$collegeId = '';
+$college = "";
 
 while($row = mysqli_fetch_assoc($result)){
     $departmentId = $row['departmentId'];
@@ -23,11 +26,20 @@ while($row = mysqli_fetch_assoc($result)){
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
     while($row2 = mysqli_fetch_assoc($result2)){
         $department = $row2['name'];
+        $collegeId = $row2['collegeId'];
     }
+
+    $query2 = "select * from college WHERE sn ='$collegeId'";
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $college = $row2['acronym'];
+    }
+
     $resultsArr[$i] = [
         'id' => $row['sn'],
         'name' => $row['name'],
-        'department' => $department
+        'department' => $department,
+        'college' => $college
     ];
     $i+=1;
 }
