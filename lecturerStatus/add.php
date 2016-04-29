@@ -13,7 +13,7 @@ include("../conn.php");
 
 $status = $_GET['status'];
 
-$query = "insert into session VALUES(NULL,'$status')";
+$query = "insert into lecturerStatus VALUES(NULL,'$status')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

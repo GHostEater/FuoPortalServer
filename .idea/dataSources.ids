@@ -93,8 +93,8 @@
       <column name="firstName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <column name="middleName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <column name="lastName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
-      <column name="rank" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
-      <column name="status" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="rankId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="statusId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="collegeId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="departmentId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="phoneNumber" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
@@ -160,16 +160,24 @@
       <column name="firstName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <column name="middleName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <column name="lastName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="sex" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="phoneNumber" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="dob" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="nationality" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="stateOrigin" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="lga" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="religion" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nextOfKin" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nextOfKinAddress" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
       <column name="collegeId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="departmentId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="majorId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="level" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
-      <column name="mode_of_entry" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
-      <column name="session" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
-      <column name="dob" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
-      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
-      <column name="address" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="levelId" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="modeOfEntryId" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
       <column name="password" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="img" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="matricNo"/>
     </table>
   </data-source>

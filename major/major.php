@@ -38,6 +38,7 @@ while($row = mysqli_fetch_assoc($result)){
     $resultsArr[$i] = [
         'id' => $row['sn'],
         'name' => $row['name'],
+        'departmentId' => $row['departmentId'],
         'department' => $department,
         'college' => $college
     ];

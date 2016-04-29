@@ -13,7 +13,7 @@ include("../conn.php");
 $id = $_GET['id'];
 $rank = $_GET['rank'];
 
-$query = "UPDATE session SET lecturerRank='$lecturer_rank' where sn = '$id'";
+$query = "UPDATE lecturerRank SET rank='$rank' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

@@ -15,18 +15,28 @@ $matricNo = $_GET['matricNo'];
 $firstName = $_GET['firstName'];
 $middleName = $_GET['middleName'];
 $lastName = $_GET['lastName'];
+$sex = $_GET['sex'];
+$email = $_GET['email'];
+$phoneNumber = $_GET['phoneNumber'];
+$dateBirth = $_GET['dateBirth'];
+$nationality = $_GET['nationality'];
+$stateOrigin = $_GET['stateOrigin'];
+$lga = $_GET['lga'];
+$religion = $_GET['religion'];
+$address = $_GET['address'];
+$nextOfKin = $_GET['nextOfKin'];
+$nextOfKinAddress = $_GET['nextOfKinAddress'];
 $collegeId = $_GET['collegeId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
-$level = $_GET['level'];
+$levelId = $_GET['levelId'];
 $mode_of_entry = $_GET['mode_of_entry'];
-$session = $_GET['session'];
-$dateBirth = $_GET['dateBirth'];
-$email = $_GET['email'];
-$address = $_GET['address'];
 $password = $_GET['password'];
 
-$query = "insert into student_info VALUES('$matricNo','$firstName','$middleName','$lastName','$collegeId','$departmentId','$majorId','$level','$mode_of_entry','$session','$dateBirth','$email','$address','$password')";
+$query = "insert into student_info VALUES('$matricNo','$firstName','$middleName','$lastName',
+'$sex','$email','$phoneNumber','$dateBirth','$nationality','$stateOrigin','$lga','$religion','$address',
+'$nextOfKin','$nextOfKinAddress','$collegeId','$departmentId','$majorId','$levelId',
+'$mode_of_entry','$password',NULL)";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

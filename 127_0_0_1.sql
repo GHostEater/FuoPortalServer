@@ -218,7 +218,7 @@ CREATE TABLE IF NOT EXISTS `lecturer_info` (
 -- Dumping data for table `lecturer_info`
 --
 
-INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rank`, `status`, `collegeId`, `departmentId`, `phoneNumber`, `email`, `password`, `address`) VALUES
+INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, rankId, statusId, `collegeId`, `departmentId`, `phoneNumber`, `email`, `password`, `address`) VALUES
 (1, 'Pamilerin', 'Azeez', 'Idowu', 'lecturer II', 'Adjunct', 1, 1, '08062425791', 'pamilerin.idowu@fuo.edu.ng', 'punch8', 'Isale Osun'),
 (2, 'Olufemi', 'Paul', 'Lasisi', 'reader', 'Permanent', 1, 1, '7037286040', 'femi.lasisi@fuo.edu.ng', 'punch8', '');
 
@@ -379,7 +379,7 @@ CREATE TABLE IF NOT EXISTS `student_info` (
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`matricNo`, `firstName`, `middleName`, `lastName`, `collegeId`, `departmentId`, `majorId`, `level`, `mode_of_entry`, `session`, `dob`, `email`, `address`, `password`) VALUES
+INSERT INTO `student_info` (`matricNo`, `firstName`, `middleName`, `lastName`, `collegeId`, `departmentId`, `majorId`, levelId, modeOfEntryId, stateOrigin, `dob`, `email`, `address`, `password`) VALUES
 ('bello', 'be', 'bek', 'vgf', 0, 0, 0, '', '', '', '0000-00-00', 'fttyu', 'ffggghh', ''),
 ('NAS/12048', 'Olufemi', 'Paul', 'Lasisi', 1, 1, 1, '400', 'D/E', '2015/2016', '1992-11-26', 'lasisi28@gmail.com', 'Block 10 Plot 3, Parakin', 'punch8');
 

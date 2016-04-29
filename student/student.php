@@ -18,16 +18,20 @@ $resultsArr = "";
 $college = '';
 $department = '';
 $major = '';
+$level = '';
+$modeOfEntry = '';
 
 while($row = mysqli_fetch_assoc($result)){
     $collegeId = $row['collegeId'];
     $departmentId = $row['departmentId'];
     $majorId = $row['majorId'];
+    $levelId = $row['levelId'];
+    $modeOfEntryId = $row['modeOfEntryId'];
 
     $query = "select * from college WHERE sn='$collegeId'";
     $result3  = mysqli_query($con,$query)or die("Unable To Execute");
     while($row3 = mysqli_fetch_assoc($result3)){
-        $college = $row3['name'];
+        $college = $row3['acronym'];
     }
 
     $query = "select * from department WHERE sn='$departmentId'";
@@ -42,25 +46,45 @@ while($row = mysqli_fetch_assoc($result)){
         $major = $row5['name'];
     }
 
+    $query = "select * from level WHERE sn='$levelId'";
+    $result5  = mysqli_query($con,$query)or die("Unable To Execute");
+    while($row5 = mysqli_fetch_assoc($result5)){
+        $level = $row5['level'];
+    }
+
+    $query = "select * from modeofentry WHERE sn='$modeOfEntryId'";
+    $result5  = mysqli_query($con,$query)or die("Unable To Execute");
+    while($row5 = mysqli_fetch_assoc($result5)){
+        $modeOfEntry = $row5['modeOfEntry'];
+    }
+
     $resultsArr[$i] = [
-        'id' => $row['matricNo'],
         'matricNo' => $row['matricNo'],
         'lastName' => $row['lastName'],
         'middleName' => $row['middleName'],
         'firstName' => $row['firstName'],
+        'sex' => $row['sex'],
+        'email' => $row['email'],
+        'phoneNumber' => $row['phoneNumber'],
+        'dateBirth' => $row['dob'],
+        'nationality' => $row['nationality'],
+        'stateOrigin' => $row['stateOrigin'],
+        'lga' => $row['lga'],
+        'religion' => $row['religion'],
+        'address' => $row['address'],
+        'nextOfKin' => $row['nextOfKin'],
+        'nextOfKinAddress' => $row['nextOfKinAddress'],
         'collegeId' => $row['collegeId'],
         'college' => $college,
         'departmentId' => $row['departmentId'],
         'department' => $department,
         'majorId' => $row['majorId'],
         'major' => $major,
-        'level' => $row['level'],
-        'modeOfEntry' => $row['mode_of_entry'],
-        'session' => $row['session'],
-        'dateBirth' => $row['dob'],
-        'email' => $row['email'],
-        'address' => $row['address'],
+        'levelId' => $row['levelId'],
+        'level' => $level,
+        'modeOfEntry' => $modeOfEntry,
         'password' => $row['password'],
+        'img' => $row['img']
     ];
     $i+=1;
 }
