@@ -17,7 +17,9 @@ $semesterId = $_GET['semesterId'];
 $levelId = $_GET ['levelId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
+$prerequisiteFor = $_GET['prerequisiteFor'];
 $type = $_GET['type'];
+
 
 $query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semesterId',
 levelId='$levelId',departmentId='$departmentId',majorId='$majorId',type='$type' where code = '$code'";

@@ -18,6 +18,7 @@ $semesterId = $_GET['semesterId'];
 $levelId = $_GET ['levelId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
+$prerequisiteFor = $_GET['prerequisiteFor'];
 $type = $_GET['type'];
 
 $query = "insert into course_info (code,title,unit,semesterId,levelId,departmentId,majorId,type)
