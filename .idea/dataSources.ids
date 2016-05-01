@@ -76,18 +76,6 @@
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
-    <table name="lecturerRank" schema="" catalog="result_computation" type="TABLE">
-      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="rank" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="sn"/>
-      <index name="unique_sn" unique="true" columns="sn"/>
-    </table>
-    <table name="lecturerStatus" schema="" catalog="result_computation" type="TABLE">
-      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="status" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="sn"/>
-      <index name="unique_sn" unique="true" columns="sn"/>
-    </table>
     <table name="lecturer_info" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="firstName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
@@ -101,6 +89,18 @@
       <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <column name="address" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
+    </table>
+    <table name="lecturerrank" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="rank" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
+    </table>
+    <table name="lecturerstatus" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
@@ -131,10 +131,21 @@
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
+    <table name="registerredcourses" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="code" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="matricNo" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="levelId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="semesterId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sessionId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
+    </table>
     <table name="registrablecourses" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="majorId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="code" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="levelId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
@@ -148,6 +159,12 @@
       <column name="session" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
       <column name="semester" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="code"/>
+    </table>
+    <table name="semester" schema="" catalog="result_computation" type="TABLE">
+      <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="semester" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="sn"/>
+      <index name="unique_sn" unique="true" columns="sn"/>
     </table>
     <table name="session" schema="" catalog="result_computation" type="TABLE">
       <column name="sn" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>

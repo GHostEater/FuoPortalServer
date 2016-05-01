@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2016 at 02:34 PM
+-- Generation Time: May 01, 2016 at 03:08 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -35,7 +35,14 @@ CREATE TABLE IF NOT EXISTS `academicaffair_info` (
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `academicaffair_info`
+--
+
+INSERT INTO `academicaffair_info` (`sn`, `firstName`, `middleName`, `lastName`, `email`, `password`) VALUES
+(2, 'Jbril', 'Babatope', 'Bello', 'bello.jbril@fuo.edu.ng', 'punch8');
 
 -- --------------------------------------------------------
 
@@ -111,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `college` (
   `acronym` text NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `college`
@@ -132,10 +139,10 @@ CREATE TABLE IF NOT EXISTS `course_info` (
   `title` varchar(45) DEFAULT NULL,
   `unit` varchar(10) DEFAULT NULL,
   `semesterId` varchar(10) DEFAULT NULL,
-  `prerequisiteFor` varchar(20) DEFAULT NULL,
   `levelId` int(11) DEFAULT NULL,
   `departmentId` int(11) NOT NULL,
   `majorId` int(11) NOT NULL,
+  `type` varchar(2) NOT NULL,
   PRIMARY KEY (`code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -143,10 +150,12 @@ CREATE TABLE IF NOT EXISTS `course_info` (
 -- Dumping data for table `course_info`
 --
 
-INSERT INTO `course_info` (`code`, `title`, `unit`, `semesterId`, `prerequisiteFor`, `levelId`, `departmentId`, `majorId`) VALUES
-('CPS101', 'Introductory to Computer I', '3', '1', NULL, 1, 1, 1),
-('MAT101', 'Elementary Mathematics I', '3', '1', NULL, 1, 1, 1),
-('MAT102', 'Elementary Mathematics II', '3', '2', NULL, 1, 1, 1);
+INSERT INTO `course_info` (`code`, `title`, `unit`, `semesterId`, `levelId`, `departmentId`, `majorId`, `type`) VALUES
+('CPS101', 'Introductory to Computer I', '3', '1', 1, 1, 1, 'C'),
+('MAT101', 'Elementary Mathematics I', '3', '1', 1, 1, 1, 'C'),
+('MAT102', 'Elementary Mathematics II', '3', '2', 1, 1, 1, 'C'),
+('MAT201', 'Mathematical Methods', '3', '1', 2, 1, 1, 'C'),
+('MAT202', 'Differential Equations', '3', '2', 2, 1, 1, 'C');
 
 -- --------------------------------------------------------
 
@@ -182,7 +191,7 @@ CREATE TABLE IF NOT EXISTS `hod_info` (
   `departmentId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `hod_info`
@@ -202,8 +211,8 @@ CREATE TABLE IF NOT EXISTS `lecturer_info` (
   `firstName` varchar(45) DEFAULT NULL,
   `middleName` varchar(45) DEFAULT NULL,
   `lastName` varchar(45) DEFAULT NULL,
-  `rank` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
-  `status` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `rankId` int(11) NOT NULL,
+  `statusId` int(11) NOT NULL,
   `collegeId` int(11) DEFAULT NULL,
   `departmentId` int(11) DEFAULT NULL,
   `phoneNumber` varchar(11) DEFAULT NULL,
@@ -218,9 +227,9 @@ CREATE TABLE IF NOT EXISTS `lecturer_info` (
 -- Dumping data for table `lecturer_info`
 --
 
-INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, rankId, statusId, `collegeId`, `departmentId`, `phoneNumber`, `email`, `password`, `address`) VALUES
-(1, 'Pamilerin', 'Azeez', 'Idowu', 'lecturer II', 'Adjunct', 1, 1, '08062425791', 'pamilerin.idowu@fuo.edu.ng', 'punch8', 'Isale Osun'),
-(2, 'Olufemi', 'Paul', 'Lasisi', 'reader', 'Permanent', 1, 1, '7037286040', 'femi.lasisi@fuo.edu.ng', 'punch8', '');
+INSERT INTO `lecturer_info` (`sn`, `firstName`, `middleName`, `lastName`, `rankId`, `statusId`, `collegeId`, `departmentId`, `phoneNumber`, `email`, `password`, `address`) VALUES
+(1, 'Pamilerin', 'Azeez', 'Idowu', 2, 1, 1, 1, '08062425791', 'pamilerin.idowu@fuo.edu.ng', 'punch8', 'Isale Osun'),
+(2, 'Olufemi', 'Paul', 'Lasisi', 1, 2, 1, 1, '7037286040', 'femi.lasisi@fuo.edu.ng', 'punch8', '');
 
 -- --------------------------------------------------------
 
@@ -233,7 +242,20 @@ CREATE TABLE IF NOT EXISTS `lecturerrank` (
   `rank` varchar(20) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `lecturerrank`
+--
+
+INSERT INTO `lecturerrank` (`sn`, `rank`) VALUES
+(1, 'Professor'),
+(2, 'Associate Professor'),
+(3, 'Senior Lecturer'),
+(4, 'Lecturer I'),
+(5, 'Lecturer II'),
+(6, 'Assistant Lecturer'),
+(7, 'Graduate Assistant');
 
 -- --------------------------------------------------------
 
@@ -246,7 +268,15 @@ CREATE TABLE IF NOT EXISTS `lecturerstatus` (
   `status` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `lecturerstatus`
+--
+
+INSERT INTO `lecturerstatus` (`sn`, `status`) VALUES
+(1, 'Permanent'),
+(2, 'Adjunct');
 
 -- --------------------------------------------------------
 
@@ -259,7 +289,7 @@ CREATE TABLE IF NOT EXISTS `level` (
   `level` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `level`
@@ -283,14 +313,16 @@ CREATE TABLE IF NOT EXISTS `major` (
   `departmentId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `major`
 --
 
 INSERT INTO `major` (`sn`, `name`, `departmentId`) VALUES
-(1, 'Computer Science', 1);
+(1, 'Computer Science', 1),
+(3, 'Industrial Chemistry', 2),
+(4, 'Mathematics', 1);
 
 -- --------------------------------------------------------
 
@@ -303,22 +335,89 @@ CREATE TABLE IF NOT EXISTS `modeofentry` (
   `modeOfEntry` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `modeofentry`
+--
+
+INSERT INTO `modeofentry` (`sn`, `modeOfEntry`) VALUES
+(1, 'UTME'),
+(2, 'D/E'),
+(3, 'D/E 300');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `prerequisites`
+--
+
+CREATE TABLE IF NOT EXISTS `prerequisites` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(10) NOT NULL,
+  `prerequisite` varchar(10) DEFAULT NULL,
+  `active` int(11) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `prerequisites`
+--
+
+INSERT INTO `prerequisites` (`sn`, `code`, `prerequisite`, `active`) VALUES
+(1, 'MAT201', 'MAT101', 1),
+(5, 'MAT201', 'MAT102', 1),
+(6, 'MAT102', 'MAT101', 1),
+(8, 'MAT202', 'MAT201', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registerredcourses`
+--
+
+CREATE TABLE IF NOT EXISTS `registerredcourses` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(10) NOT NULL,
+  `matricNo` varchar(10) NOT NULL,
+  `levelId` int(11) NOT NULL,
+  `semesterId` int(11) NOT NULL,
+  `sessionId` int(11) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `prerequistes`
+-- Table structure for table `registrablecourses`
 --
 
-CREATE TABLE IF NOT EXISTS `prerequistes` (
+CREATE TABLE IF NOT EXISTS `registrablecourses` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `majorId` int(11) NOT NULL,
   `code` varchar(10) NOT NULL,
-  `prerequisite` varchar(10) NOT NULL,
-  `active` int(11) NOT NULL,
+  `levelId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `registrablecourses`
+--
+
+INSERT INTO `registrablecourses` (`sn`, `majorId`, `code`, `levelId`) VALUES
+(1, 1, 'MAT101', 1),
+(2, 1, 'CPS101', 1),
+(3, 3, 'MAT101', 1),
+(4, 4, 'MAT101', 1),
+(5, 1, 'MAT201', 2),
+(6, 3, 'MAT201', 2),
+(7, 4, 'MAT201', 2),
+(8, 1, 'MAT102', 1),
+(9, 3, 'MAT102', 1),
+(10, 4, 'MAT102', 1);
 
 -- --------------------------------------------------------
 
@@ -341,6 +440,26 @@ CREATE TABLE IF NOT EXISTS `result_info` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `semester`
+--
+
+CREATE TABLE IF NOT EXISTS `semester` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `semester` int(11) NOT NULL,
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `unique_sn` (`sn`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `semester`
+--
+
+INSERT INTO `semester` (`sn`, `semester`) VALUES
+(1, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `session`
 --
 
@@ -349,7 +468,15 @@ CREATE TABLE IF NOT EXISTS `session` (
   `session` varchar(20) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `session`
+--
+
+INSERT INTO `session` (`sn`, `session`) VALUES
+(1, '2015/2016'),
+(2, '2014/2015');
 
 -- --------------------------------------------------------
 
@@ -362,16 +489,24 @@ CREATE TABLE IF NOT EXISTS `student_info` (
   `firstName` varchar(45) DEFAULT NULL,
   `middleName` varchar(45) DEFAULT NULL,
   `lastName` varchar(45) DEFAULT NULL,
+  `sex` varchar(10) NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `phoneNumber` varchar(20) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `nationality` varchar(20) NOT NULL,
+  `stateOrigin` varchar(20) DEFAULT NULL,
+  `lga` varchar(20) NOT NULL,
+  `religion` varchar(20) NOT NULL,
+  `address` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `nextOfKin` varchar(100) NOT NULL,
+  `nextOfKinAddress` longtext NOT NULL,
   `collegeId` int(11) DEFAULT NULL,
   `departmentId` int(11) DEFAULT NULL,
   `majorId` int(11) DEFAULT NULL,
-  `level` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
-  `mode_of_entry` varchar(10) DEFAULT NULL,
-  `session` varchar(20) DEFAULT NULL,
-  `dob` date DEFAULT NULL,
-  `email` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
-  `address` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `levelId` varchar(20) DEFAULT NULL,
+  `modeOfEntryId` varchar(10) DEFAULT NULL,
   `password` varchar(40) NOT NULL,
+  `img` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`matricNo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -379,9 +514,8 @@ CREATE TABLE IF NOT EXISTS `student_info` (
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`matricNo`, `firstName`, `middleName`, `lastName`, `collegeId`, `departmentId`, `majorId`, levelId, modeOfEntryId, stateOrigin, `dob`, `email`, `address`, `password`) VALUES
-('bello', 'be', 'bek', 'vgf', 0, 0, 0, '', '', '', '0000-00-00', 'fttyu', 'ffggghh', ''),
-('NAS/12048', 'Olufemi', 'Paul', 'Lasisi', 1, 1, 1, '400', 'D/E', '2015/2016', '1992-11-26', 'lasisi28@gmail.com', 'Block 10 Plot 3, Parakin', 'punch8');
+INSERT INTO `student_info` (`matricNo`, `firstName`, `middleName`, `lastName`, `sex`, `email`, `phoneNumber`, `dob`, `nationality`, `stateOrigin`, `lga`, `religion`, `address`, `nextOfKin`, `nextOfKinAddress`, `collegeId`, `departmentId`, `majorId`, `levelId`, `modeOfEntryId`, `password`, `img`) VALUES
+('NAS/12048', 'Olufemi', 'Paul', 'Lasisi', 'Male', 'lasisi28@gmail.com', '07037286040', '1992-11-26', 'Nigerian', 'Ogun', 'Ijebu North-East', 'Christianity', 'Block 10 Plot 3, Parakin', 'Mrs Monica Lasisi', 'Block 10 Plot 3, Parakin', 1, 1, 1, '1', '2', 'punch8', 'NAS/12048.jpg');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

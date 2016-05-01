@@ -15,15 +15,49 @@ $query = "select * from registrablecourses";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
-$college = '';
-$department = '';
 $major = '';
+$level = '';
+$title = '';
+$unit = '';
+$semester = '';
+$type = '';
 
 while($row = mysqli_fetch_assoc($result)){
+    $majorId = $row['majorId'];
+    $code = $row['code'];
+    $levelId = $row['levelId'];
+
+    $query = "select * from major where sn='$majorId'";
+    $result2 = mysqli_query($con,$query)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $major = $row2['name'];
+    }
+
+    $query = "select * from level where sn='$levelId'";
+    $result2 = mysqli_query($con,$query)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $level = $row2['level'];
+    }
+
+    $query = "select * from course_info where code='$code'";
+    $result2 = mysqli_query($con,$query)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $title = $row2['title'];
+        $unit = $row2['unit'];
+        $semester = $row2['semesterId'];
+        $type = $row2['type'];
+    }
 
     $resultsArr[$i] = [
-        '' => $row[''],
-        '' => $row['']
+        'code' => $row['code'],
+        'title' => $title,
+        'unit' => $unit,
+        'semester' => $semester,
+        'type' => $type,
+        'level' => $level,
+        'levelId' => $levelId,
+        'major' => $major,
+        'majorId' => $majorId
     ];
     $i+=1;
 }
