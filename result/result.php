@@ -15,8 +15,16 @@ $query = "select * from result_info";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
+$session = '';
 
 while($row = mysqli_fetch_assoc($result)){
+    $sessionId = $row['sessionId'];
+
+    $query2 = "select * from session WHERE sn='$sessionId'";
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $session = $row2['session'];
+    }
     $resultsArr[$i] = [
         'code' => $row['code'],
         'matricNo' => $row['matricNo'],
@@ -24,7 +32,8 @@ while($row = mysqli_fetch_assoc($result)){
         'exam' => $row['exam'],
         'final' => $row['final'],
         'grade' => $row['grade'],
-        'session' => $row['session'],
+        'sessionId' => $row['sessionId'],
+        'session' => $session,
         'semester' => $row['semester']
     ];
     $i+=1;

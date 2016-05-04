@@ -20,7 +20,7 @@ $session = $_GET['session'];
 $semester = $_GET['semester'];
 
 
-$query = "UPDATE result_info SET code='$code',matricNo='$matricNo',ca='$ca',exam='$exam',final='$final',grade='$grade',session='$session',semester='$semester' where code = '$code'";
+$query = "UPDATE result_info SET code='$code',matricNo='$matricNo',ca='$ca',exam='$exam',final='$final',grade='$grade',sessionId='$session',semester='$semester' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
