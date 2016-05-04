@@ -30,13 +30,13 @@ $collegeId = $_GET['collegeId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
 $levelId = $_GET['levelId'];
-$mode_of_entry = $_GET['mode_of_entry'];
+$modeOfEntryId = $_GET['modeOfEntryId'];
 $password = $_GET['password'];
 
 $query = "insert into student_info VALUES('$matricNo','$firstName','$middleName','$lastName',
 '$sex','$email','$phoneNumber','$dateBirth','$nationality','$stateOrigin','$lga','$religion','$address',
 '$nextOfKin','$nextOfKinAddress','$collegeId','$departmentId','$majorId','$levelId',
-'$mode_of_entry','$password',NULL)";
+'$modeOfEntryId','$password',NULL)";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
