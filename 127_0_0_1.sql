@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2016 at 03:08 PM
+-- Generation Time: May 04, 2016 at 01:49 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -77,16 +77,19 @@ CREATE TABLE IF NOT EXISTS `allocation_info` (
   `lecturerId` varchar(20) NOT NULL DEFAULT '',
   `code` varchar(20) DEFAULT NULL,
   `allocatedBy` int(11) NOT NULL,
+  `semester` int(11) NOT NULL,
+  `sessionId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `allocation_info`
 --
 
-INSERT INTO `allocation_info` (`sn`, `lecturerId`, `code`, `allocatedBy`) VALUES
-(5, '1', 'MAT102', 1);
+INSERT INTO `allocation_info` (`sn`, `lecturerId`, `code`, `allocatedBy`, `semester`, `sessionId`) VALUES
+(6, '2', 'CPS101', 1, 1, 4),
+(7, '1', 'MAT101', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -138,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `course_info` (
   `code` varchar(20) NOT NULL DEFAULT '',
   `title` varchar(45) DEFAULT NULL,
   `unit` varchar(10) DEFAULT NULL,
-  `semesterId` varchar(10) DEFAULT NULL,
+  `semester` varchar(10) DEFAULT NULL,
   `levelId` int(11) DEFAULT NULL,
   `departmentId` int(11) NOT NULL,
   `majorId` int(11) NOT NULL,
@@ -150,12 +153,15 @@ CREATE TABLE IF NOT EXISTS `course_info` (
 -- Dumping data for table `course_info`
 --
 
-INSERT INTO `course_info` (`code`, `title`, `unit`, semester, `levelId`, `departmentId`, `majorId`, `type`) VALUES
+INSERT INTO `course_info` (`code`, `title`, `unit`, `semester`, `levelId`, `departmentId`, `majorId`, `type`) VALUES
+('BIO101', 'Introductory Biology', '3', '1', 1, 2, 1, 'C'),
+('CHM101', 'Introductory Chemistry', '3', '1', 1, 2, 1, 'C'),
 ('CPS101', 'Introductory to Computer I', '3', '1', 1, 1, 1, 'C'),
 ('MAT101', 'Elementary Mathematics I', '3', '1', 1, 1, 1, 'C'),
 ('MAT102', 'Elementary Mathematics II', '3', '2', 1, 1, 1, 'C'),
 ('MAT201', 'Mathematical Methods', '3', '1', 2, 1, 1, 'C'),
-('MAT202', 'Differential Equations', '3', '2', 2, 1, 1, 'C');
+('MAT202', 'Differential Equations', '3', '2', 2, 1, 1, 'C'),
+('PHY101', 'Introductory Physics I', '3', '1', 1, 3, 1, 'C');
 
 -- --------------------------------------------------------
 
@@ -169,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `department` (
   `collegeId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `department`
@@ -177,7 +183,8 @@ CREATE TABLE IF NOT EXISTS `department` (
 
 INSERT INTO `department` (`sn`, `name`, `collegeId`) VALUES
 (1, 'Department of Mathematics and Computer Sciences', 1),
-(2, 'Department of Chemical Sciences', 1);
+(2, 'Department of Chemical Sciences', 1),
+(3, 'Department of Physics and Earth Sciences', 1);
 
 -- --------------------------------------------------------
 
@@ -191,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `hod_info` (
   `departmentId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `hod_info`
@@ -242,7 +249,7 @@ CREATE TABLE IF NOT EXISTS `lecturerrank` (
   `rank` varchar(20) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `lecturerrank`
@@ -268,7 +275,7 @@ CREATE TABLE IF NOT EXISTS `lecturerstatus` (
   `status` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `lecturerstatus`
@@ -289,7 +296,7 @@ CREATE TABLE IF NOT EXISTS `level` (
   `level` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `level`
@@ -335,7 +342,7 @@ CREATE TABLE IF NOT EXISTS `modeofentry` (
   `modeOfEntry` varchar(10) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `modeofentry`
@@ -382,11 +389,22 @@ CREATE TABLE IF NOT EXISTS `registerredcourses` (
   `code` varchar(10) NOT NULL,
   `matricNo` varchar(10) NOT NULL,
   `levelId` int(11) NOT NULL,
-  `semesterId` int(11) NOT NULL,
+  `semester` int(11) DEFAULT NULL,
   `sessionId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `registerredcourses`
+--
+
+INSERT INTO `registerredcourses` (`sn`, `code`, `matricNo`, `levelId`, `semester`, `sessionId`) VALUES
+(1, 'BIO101', 'NAS/12048', 1, 1, 4),
+(2, 'CHM101', 'NAS/12048', 1, 1, 4),
+(3, 'PHY101', 'NAS/12048', 1, 1, 4),
+(4, 'CPS101', 'NAS/12048', 1, 1, 4),
+(5, 'MAT101', 'NAS/12048', 1, 1, 4);
 
 -- --------------------------------------------------------
 
@@ -401,7 +419,7 @@ CREATE TABLE IF NOT EXISTS `registrablecourses` (
   `levelId` int(11) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `registrablecourses`
@@ -417,7 +435,10 @@ INSERT INTO `registrablecourses` (`sn`, `majorId`, `code`, `levelId`) VALUES
 (7, 4, 'MAT201', 2),
 (8, 1, 'MAT102', 1),
 (9, 3, 'MAT102', 1),
-(10, 4, 'MAT102', 1);
+(10, 4, 'MAT102', 1),
+(11, 1, 'PHY101', 1),
+(12, 1, 'BIO101', 1),
+(13, 1, 'CHM101', 1);
 
 -- --------------------------------------------------------
 
@@ -468,7 +489,7 @@ CREATE TABLE IF NOT EXISTS `session` (
   `session` varchar(20) NOT NULL,
   PRIMARY KEY (`sn`),
   UNIQUE KEY `unique_sn` (`sn`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `session`
@@ -476,7 +497,7 @@ CREATE TABLE IF NOT EXISTS `session` (
 
 INSERT INTO `session` (`sn`, `session`) VALUES
 (1, '2015/2016'),
-(2, '2014/2015');
+(4, '2016/2017');
 
 -- --------------------------------------------------------
 
