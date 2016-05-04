@@ -150,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `course_info` (
 -- Dumping data for table `course_info`
 --
 
-INSERT INTO `course_info` (`code`, `title`, `unit`, `semesterId`, `levelId`, `departmentId`, `majorId`, `type`) VALUES
+INSERT INTO `course_info` (`code`, `title`, `unit`, semester, `levelId`, `departmentId`, `majorId`, `type`) VALUES
 ('CPS101', 'Introductory to Computer I', '3', '1', 1, 1, 1, 'C'),
 ('MAT101', 'Elementary Mathematics I', '3', '1', 1, 1, 1, 'C'),
 ('MAT102', 'Elementary Mathematics II', '3', '2', 1, 1, 1, 'C'),

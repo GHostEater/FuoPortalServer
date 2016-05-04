@@ -30,6 +30,8 @@
       <column name="lecturerId" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="code" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
       <column name="allocatedBy" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="semester" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sessionId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
@@ -55,7 +57,7 @@
       <column name="code" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="title" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <column name="unit" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
-      <column name="semesterId" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="semester" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
       <column name="levelId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="departmentId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="majorId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>

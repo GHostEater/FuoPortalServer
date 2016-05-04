@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: GHostEater
- * Date: 01-May-16
- * Time: 2:17 PM
+ * Date: 03-May-16
+ * Time: 11:43 AM
  */
 ob_start();
 header("Access-Control-Allow-Origin: *");
@@ -14,12 +14,12 @@ include("../conn.php");
 $query = "select * from semester";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
-$resultsArr = "";
+$semester = "";
 
 while($row = mysqli_fetch_assoc($result)){
     $resultsArr = [
-        'id' => $row['id'],
-        'semester' => $row['semester']
+        'id' => $row['sn'],
+        'semester' => $row['semester'],
     ];
 }
 header("HTTP/1.0 201 Success");

@@ -47,7 +47,7 @@ while($row = mysqli_fetch_assoc($result)){
     }
 
     $resultsArr[$i] = [
-        'id' => $row['id'],
+        'id' => $row['sn'],
         'code' => $row['code'],
         'matricNo' => $matricNo,
         'title' => $title,

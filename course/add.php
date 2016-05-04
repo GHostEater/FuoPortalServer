@@ -14,15 +14,15 @@ include("../conn.php");
 $code = $_GET['code'];
 $title = $_GET['title'];
 $unit = $_GET['unit'];
-$semesterId = $_GET['semesterId'];
+$semester = $_GET['semester'];
 $levelId = $_GET ['levelId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
 $prerequisiteFor = $_GET['prerequisiteFor'];
 $type = $_GET['type'];
 
-$query = "insert into course_info (code,title,unit,semesterId,levelId,departmentId,majorId,type)
-VALUES('$code','$title','$unit','$semesterId','$levelId','$departmentId','$majorId','$type')";
+$query = "insert into course_info (code,title,unit,semester,levelId,departmentId,majorId,type)
+VALUES('$code','$title','$unit','$semester','$levelId','$departmentId','$majorId','$type')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

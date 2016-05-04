@@ -13,7 +13,7 @@ include("../conn.php");
 $code = $_GET['code'];
 $title = $_GET['title'];
 $unit = $_GET['unit'];
-$semesterId = $_GET['semesterId'];
+$semester = $_GET['semester'];
 $levelId = $_GET ['levelId'];
 $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
@@ -21,7 +21,7 @@ $prerequisiteFor = $_GET['prerequisiteFor'];
 $type = $_GET['type'];
 
 
-$query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semesterId='$semesterId',
+$query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semester='$semester',
 levelId='$levelId',departmentId='$departmentId',majorId='$majorId',type='$type' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 

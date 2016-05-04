@@ -33,10 +33,10 @@ while($row = mysqli_fetch_assoc($result)){
                 'code' => $row['code'],
                 'title' => $row2['title'],
                 'unit' => $row2['unit'],
-                'semesterId' => $row2['semesterId'],
+                'type' => $row2['type'],
+                'semester' => $row2['semester'],
                 'levelId' => $row2['levelId'],
-                'level' => $row3['level'],
-                'prerequisiteFor' => $row2['prerequisiteFor']
+                'level' => $row3['level']
             ];
         }
     }
