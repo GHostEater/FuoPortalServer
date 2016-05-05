@@ -44,11 +44,12 @@ while($row = mysqli_fetch_assoc($result)){
     while($row2 = mysqli_fetch_assoc($result2)){
         $title = $row2['title'];
         $unit = $row2['unit'];
-        $semester = $row2['semesterId'];
+        $semester = $row2['semester'];
         $type = $row2['type'];
     }
 
     $resultsArr[$i] = [
+        'id' => $row['sn'],
         'code' => $row['code'],
         'title' => $title,
         'unit' => $unit,

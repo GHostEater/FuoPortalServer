@@ -23,12 +23,12 @@ else{
     $exam = round($exam);
 }
 
-$query = "insert into result_info WHERE code='$code' AND matricNo='$matricNo'AND sessionId='$sessionId'
-AND semester='$semester'";
+$query = "select * from result_info WHERE code='$code' AND matricNo='$matricNo'AND sessionId='$sessionId'
+AND semester='$semester' AND exam='$exam'";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $nRows = mysqli_num_rows($result);
 
-if($nRows = 0){
+if($nRows == 0){
     $query2 = "select * from registerredcourses WHERE code='$code' AND matricNo='$matricNo'
     AND sessionId='$sessionId' AND semester='$semester'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
