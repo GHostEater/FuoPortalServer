@@ -26,6 +26,7 @@ while($row = mysqli_fetch_assoc($result)){
         $session = $row2['session'];
     }
     $resultsArr[$i] = [
+        'id' => $row['sn'],
         'code' => $row['code'],
         'matricNo' => $row['matricNo'],
         'ca' => $row['ca'],

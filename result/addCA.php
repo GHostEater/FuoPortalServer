@@ -36,7 +36,7 @@ if($nRows === 0){
     $nRows2 = mysqli_num_rows($result2);
 
     if($nRows2 > 0){
-        $query2 = "insert into result_info VALUES('$code','$matricNo','$ca',NULL,NULL,NULL,'$sessionId','$semester')";
+        $query2 = "insert into result_info VALUES('$code','$matricNo','$ca',NULL,NULL,NULL,'$sessionId','$semester',NULL)";
         mysqli_query($con,$query2)or die("Unable To Execute");
         header("HTTP/1.0 201 Success");
     }
