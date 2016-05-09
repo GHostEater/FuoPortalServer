@@ -35,32 +35,32 @@ if($nRows == 0){
     $nRows2 = mysqli_num_rows($result2);
 
     if($nRows2 > 0){
-        $query = "select * from result_info where code='$code' AND matricNo='$matricNo'
+        $query3 = "select * from result_info where code='$code' AND matricNo='$matricNo'
         AND sessionId='$sessionId' AND semester='$semester'";
-        $result = mysqli_query($con,$query);
-        while($row = mysqli_fetch_assoc($result)){
+        $result3 = mysqli_query($con,$query3);
+        while($row = mysqli_fetch_assoc($result3)){
             $ca = $row['ca'];
             $final = floatval($exam)+floatval($ca);
 
-            if($final <= 44){
-                $grade = 'F';
-            }
-            elseif($final >=45 || $final <= 49){
-                $grade = 'D';
-            }
-            elseif($final >=50 || $final <=59){
-                $grade = 'C';
-            }
-            elseif($final >=60 || $final <=69){
-                $grade = 'B';
-            }
-            elseif($final >=70 || $final <=100){
+            if($final >=70 && $final <=100){
                 $grade = 'A';
             }
+            elseif($final >=60 && $final <=69){
+                $grade = 'B';
+            }
+            elseif($final >=50 && $final <=59){
+                $grade = 'C';
+            }
+            elseif($final >=45 && $final < 50){
+                $grade = 'D';
+            }
+            elseif($final <= 44){
+                $grade = 'F';
+            }
 
-            $query = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade' WHERE code='$code' AND matricNo='$matricNo'
+            $query4 = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade' WHERE code='$code' AND matricNo='$matricNo'
                     AND sessionId='$sessionId' AND semester='$semester'";
-            mysqli_query($con,$query2)or die("Unable To Execute");
+            mysqli_query($con,$query4)or die("Unable To Execute");
             header("HTTP/1.0 201 Success");
         }
     }
@@ -71,9 +71,4 @@ if($nRows == 0){
 else{
     header("HTTP/1.0 402 Already Upload");
 }
-
-
-
-
-
 ob_end_flush();

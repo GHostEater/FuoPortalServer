@@ -65,7 +65,8 @@ while($row = mysqli_fetch_assoc($result)){
         'department' => $department,
         'phoneNumber' => $row['phoneNumber'],
         'email' => $row['email'],
-        'address' => $row['address']
+        'address' => $row['address'],
+        'password' => $row['password']
     ];
     $i += 1;
 }
