@@ -19,20 +19,30 @@ $session = '';
 
 while($row = mysqli_fetch_assoc($result)){
     $sessionId = $row['sessionId'];
+    $code = $row['code'];
 
     $query2 = "select * from session WHERE sn='$sessionId'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
     while($row2 = mysqli_fetch_assoc($result2)){
         $session = $row2['session'];
     }
+    $query2 = "select * from course_info WHERE code='$code'";
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $title = $row2['title'];
+        $unit = $row2['unit'];
+    }
     $resultsArr[$i] = [
         'id' => $row['sn'],
         'code' => $row['code'],
+        'title' => $title,
+        'unit' => $unit,
         'matricNo' => $row['matricNo'],
         'ca' => $row['ca'],
         'exam' => $row['exam'],
         'final' => $row['final'],
         'grade' => $row['grade'],
+        'gp' => $row['gp'],
         'sessionId' => $row['sessionId'],
         'session' => $session,
         'semester' => $row['semester']

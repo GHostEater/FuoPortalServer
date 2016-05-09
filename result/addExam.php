@@ -41,24 +41,30 @@ if($nRows == 0){
         while($row = mysqli_fetch_assoc($result3)){
             $ca = $row['ca'];
             $final = floatval($exam)+floatval($ca);
+            $gp = '';
 
             if($final >=70 && $final <=100){
                 $grade = 'A';
+                $gp = 5;
             }
             elseif($final >=60 && $final <=69){
                 $grade = 'B';
+                $gp = 4;
             }
             elseif($final >=50 && $final <=59){
                 $grade = 'C';
+                $gp = 3;
             }
             elseif($final >=45 && $final < 50){
                 $grade = 'D';
+                $gp = 2;
             }
             elseif($final <= 44){
                 $grade = 'F';
+                $gp = 0;
             }
 
-            $query4 = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade' WHERE code='$code' AND matricNo='$matricNo'
+            $query4 = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade',gp='$gp' WHERE code='$code' AND matricNo='$matricNo'
                     AND sessionId='$sessionId' AND semester='$semester'";
             mysqli_query($con,$query4)or die("Unable To Execute");
             header("HTTP/1.0 201 Success");

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\fuoPortal\result\add.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/addCA.php" afterPath="$PROJECT_DIR$/result/addCA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/addExam.php" afterPath="$PROJECT_DIR$/result/addExam.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/result.php" afterPath="$PROJECT_DIR$/result/result.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -61,42 +61,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - result_computation@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="result_computation" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="course_info" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - result_computation@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="result_computation" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="allocation_info" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -104,16 +68,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="addCA.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/result/addCA.php">
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/result/result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9155963" vertical-offset="147" max-vertical-offset="935">
-              <caret line="38" column="120" selection-start-line="38" selection-start-column="120" selection-end-line="38" selection-end-column="120" />
+            <state vertical-scroll-proportion="0.68458784" vertical-offset="366" max-vertical-offset="1003">
+              <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
               <folding>
-                <marker date="1462806106398" expanded="true" signature="425:546" placeholder="select * fro..result_info..." />
-                <marker date="1462806106398" expanded="true" signature="682:814" placeholder="select * fro..registerredcourses..." />
-                <marker date="1462806106398" expanded="true" signature="969:1071" placeholder="insert into ..." />
+                <marker date="1462812787108" expanded="true" signature="223:248" placeholder="select * fro..result_info..." />
+                <marker date="1462812787108" expanded="true" signature="478:521" placeholder="select * fro..session..." />
+                <marker date="1462812787108" expanded="true" signature="701:745" placeholder="select * fro..course_info..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result_computation.lecturer_info" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,12 +179,12 @@
         <option value="$PROJECT_DIR$/courseRegistration/deleteRegistrableCourse.php" />
         <option value="$PROJECT_DIR$/courseRegistration/addRegistrableCourse.php" />
         <option value="$PROJECT_DIR$/result/addGPA.php" />
-        <option value="$PROJECT_DIR$/result/addExam.php" />
         <option value="$PROJECT_DIR$/courseRegistration/register.php" />
         <option value="$PROJECT_DIR$/allocation/allocate.php" />
         <option value="$PROJECT_DIR$/lecturer/lecturer.php" />
-        <option value="$PROJECT_DIR$/result/result.php" />
         <option value="$PROJECT_DIR$/result/addCA.php" />
+        <option value="$PROJECT_DIR$/result/addExam.php" />
+        <option value="$PROJECT_DIR$/result/result.php" />
       </list>
     </option>
   </component>
@@ -600,7 +579,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462802132313</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="resultUpload">
+      <created>1462809414307</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1462809414307</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -679,13 +664,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lecturerStatus/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45698926" vertical-offset="0" max-vertical-offset="558">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lecturerStatus/lecturerStatus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
@@ -1034,19 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..registerredcourses">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..student_info">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1057,30 +1022,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41756272" vertical-offset="243" max-vertical-offset="833">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding>
-            <marker date="1462805807102" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
-            <marker date="1462805807102" expanded="true" signature="-1:-1" placeholder="select * fro..session..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/addExam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3559633" vertical-offset="162" max-vertical-offset="1343">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding>
-            <marker date="1462799700706" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
-            <marker date="1462799700706" expanded="true" signature="-1:-1" placeholder="select * fro..registerredcourses..." />
-            <marker date="1462799700706" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
-            <marker date="1462799700706" expanded="true" signature="-1:-1" placeholder="UPDATE resul..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,7 +1038,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
+    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..allocation_info">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1110,18 +1051,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allocation/allocate.php">
+    <entry file="dbDummy://db-console:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.461538" vertical-offset="41" max-vertical-offset="612">
-          <caret line="23" column="103" selection-start-line="23" selection-start-column="103" selection-end-line="23" selection-end-column="103" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..registerredcourses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/addCA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7449541" vertical-offset="240" max-vertical-offset="935">
+          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
           <folding>
-            <marker date="1462801097817" expanded="true" signature="385:433" placeholder="select * fro..allocation_info..." />
-            <marker date="1462801097817" expanded="true" signature="569:671" placeholder="insert into ..." />
+            <marker date="1462810623767" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1462810623767" expanded="true" signature="-1:-1" placeholder="select * fro..registerredcourses..." />
+            <marker date="1462810623767" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..allocation_info">
+    <entry file="file://$PROJECT_DIR$/result/addExam.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16513762" vertical-offset="641" max-vertical-offset="1445">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <marker date="1462811505585" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1462811505585" expanded="true" signature="-1:-1" placeholder="select * fro..registerredcourses..." />
+            <marker date="1462811505585" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1462811505585" expanded="true" signature="-1:-1" placeholder="UPDATE resul..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1147,14 +1123,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/addCA.php">
+    <entry file="file://$PROJECT_DIR$/allocation/allocate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9155963" vertical-offset="147" max-vertical-offset="935">
-          <caret line="38" column="120" selection-start-line="38" selection-start-column="120" selection-end-line="38" selection-end-column="120" />
+        <state vertical-scroll-proportion="-13.461538" vertical-offset="41" max-vertical-offset="612">
+          <caret line="23" column="103" selection-start-line="23" selection-start-column="103" selection-end-line="23" selection-end-column="103" />
           <folding>
-            <marker date="1462806106398" expanded="true" signature="425:546" placeholder="select * fro..result_info..." />
-            <marker date="1462806106398" expanded="true" signature="682:814" placeholder="select * fro..registerredcourses..." />
-            <marker date="1462806106398" expanded="true" signature="969:1071" placeholder="insert into ..." />
+            <marker date="1462801097817" expanded="true" signature="385:433" placeholder="select * fro..allocation_info..." />
+            <marker date="1462801097817" expanded="true" signature="569:671" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68458784" vertical-offset="366" max-vertical-offset="1003">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <marker date="1462812787108" expanded="true" signature="223:248" placeholder="select * fro..result_info..." />
+            <marker date="1462812787108" expanded="true" signature="478:521" placeholder="select * fro..session..." />
+            <marker date="1462812787108" expanded="true" signature="701:745" placeholder="select * fro..course_info..." />
           </folding>
         </state>
       </provider>
