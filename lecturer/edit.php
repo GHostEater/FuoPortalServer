@@ -20,12 +20,12 @@ $collegeId = $_GET['collegeId'];
 $departmentId = $_GET['departmentId'];
 $phoneNumber = $_GET['phoneNumber'];
 $email = $_GET['email'];
-$password = $_GET['password'];
 $address = $_GET['address'];
+$password = $_GET['password'];
 
 $query = "UPDATE lecturer_info SET firstName='$firstName',middleName='$middleName',lastName='$lastName',rankId='$rankId',
 statusId='$statusId',collegeId='$collegeId',departmentId='$departmentId',phoneNumber='$phoneNumber',email='$email',
-password='$password',address='$address' where sn = '$id'";
+address='$address',password='$password' where sn = '$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
