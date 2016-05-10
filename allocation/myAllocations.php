@@ -59,7 +59,8 @@ while($row = mysqli_fetch_assoc($result)){
         'level' => $level,
         'firstName' => $firstName,
         'middleName' => $middleName,
-        'lastName' => $lastName
+        'lastName' => $lastName,
+        'position' => $row['position']
     ];
     $i+=1;
 }

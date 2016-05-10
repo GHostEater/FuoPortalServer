@@ -36,7 +36,8 @@ while($row = mysqli_fetch_assoc($result)){
                 'type' => $row2['type'],
                 'semester' => $row2['semester'],
                 'levelId' => $row2['levelId'],
-                'level' => $row3['level']
+                'level' => $row3['level'],
+                'position' => $row['position']
             ];
         }
     }

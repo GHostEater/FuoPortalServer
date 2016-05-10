@@ -32,6 +32,7 @@
       <column name="allocatedBy" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="semester" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="sessionId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="position" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>
@@ -172,6 +173,7 @@
       <column name="cgpa" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12"/>
       <column name="tcp" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12"/>
       <column name="tcu" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12"/>
+      <column name="matricNo" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="sn"/>
       <index name="unique_sn" unique="true" columns="sn"/>
     </table>

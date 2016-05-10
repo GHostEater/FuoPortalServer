@@ -18,9 +18,21 @@ $resultsArr = "";
 $session = '';
 
 while($row = mysqli_fetch_assoc($result)){
+    $matricNo = $row['matricNo'];
     $sessionId = $row['sessionId'];
     $code = $row['code'];
 
+    $query2 = "select * from student_info WHERE matricNo='$matricNo'";
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $firstName = $row2['firstName'];
+        $middleName = $row2['middleName'];
+        $lastName = $row2['lastName'];
+        $departmentId = $row2['departmentId'];
+        $collegeId = $row2['collegeId'];
+        $majorId = $row2['majorId'];
+        $levelId = $row2['levelId'];
+    }
     $query2 = "select * from session WHERE sn='$sessionId'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
     while($row2 = mysqli_fetch_assoc($result2)){
@@ -45,7 +57,14 @@ while($row = mysqli_fetch_assoc($result)){
         'gp' => $row['gp'],
         'sessionId' => $row['sessionId'],
         'session' => $session,
-        'semester' => $row['semester']
+        'semester' => $row['semester'],
+        'firstName' => $firstName,
+        'middleName' => $middleName,
+        'lastName' => $lastName,
+        'collegeId' => $collegeId,
+        'departmentId' => $departmentId,
+        'majorId' => $majorId,
+        'levelId' => $levelId
     ];
     $i+=1;
 }
