@@ -12,10 +12,9 @@ header("Content-Type: application/json");
 include("../conn.php");
 
 $matricNo = $_POST['matricNo'];
-$matricNo = str_replace("/", "", $matricNo);
+$i = str_replace("/", "", $matricNo);
 
-echo $matricNo;
-$img = $matricNo.'.jpg';
+$img = $i.'.jpg';
 
 mysqli_query($con,"UPDATE student_info SET img = '$img' WHERE matricNo = '$matricNo';");
 

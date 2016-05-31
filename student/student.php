@@ -59,6 +59,7 @@ while($row = mysqli_fetch_assoc($result)){
     }
 
     $resultsArr[$i] = [
+        'id' => $row['sn'],
         'matricNo' => $row['matricNo'],
         'lastName' => $row['lastName'],
         'middleName' => $row['middleName'],
@@ -84,7 +85,8 @@ while($row = mysqli_fetch_assoc($result)){
         'level' => $level,
         'modeOfEntry' => $modeOfEntry,
         'password' => $row['password'],
-        'img' => $row['img']
+        'img' => $row['img'],
+        'levelAdviserId' => $row['levelAdviserId']
     ];
     $i+=1;
 }

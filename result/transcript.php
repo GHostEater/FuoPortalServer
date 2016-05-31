@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Bello J
- * Date: 4/16/2016
- * Time: 1:34 AM
+ * Date: 5/19/2016
+ * Time: 12:45 PM
  */
 ob_start();
 header("Access-Control-Allow-Origin: *");
@@ -50,13 +50,14 @@ while($row = mysqli_fetch_assoc($result)){
         'title' => $title,
         'unit' => $unit,
         'matricNo' => $row['matricNo'],
-        'ca' => $row['ca'],
-        'exam' => $row['exam'],
-        'final' => $row['final'],
         'grade' => $row['grade'],
-        'gp' => $row['gp'],
+        'tcp' => $row['tcp'],
+        'ctcp' => $row['ctcp'],
+        'tnu' => $row['tnu'],
+        'ctnu' => $row['ctnu'],
+        'cgpa' => $row['cgpa'],
+        'gpa' => $row['gpa'],
         'sessionId' => $row['sessionId'],
-        'rel' => $row['rel'],
         'session' => $session,
         'semester' => $row['semester'],
         'firstName' => $firstName,
@@ -65,8 +66,7 @@ while($row = mysqli_fetch_assoc($result)){
         'collegeId' => $collegeId,
         'departmentId' => $departmentId,
         'majorId' => $majorId,
-        'levelId' => $levelId,
-        'statusId' => $row['statusId']
+        'levelId' => $levelId
     ];
     $i+=1;
 }

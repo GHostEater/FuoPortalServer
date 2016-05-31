@@ -12,7 +12,7 @@ header("Content-Type: application/json");
 include("../conn.php");
 $id = $_GET['id'];
 
-$query = "select * from allocation_info WHERE lecturerId='$id'";
+$query = "select * from allocation_info WHERE lecturerId='$id' or allocatedBy='$id'";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";

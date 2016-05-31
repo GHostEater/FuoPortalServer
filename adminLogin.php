@@ -143,11 +143,11 @@ switch($position){
         }
         break;
     case '4':
-        $query = "SELECT * FROM co_info WHERE email = '$username'";
+        $query = "SELECT * FROM academicaffair_info WHERE email = '$username'";
         $result = mysqli_query($con,$query)or die("Unable To Execute");
         $n_rows = mysqli_num_rows($result);
         if($n_rows > 0){
-            $query2 = "SELECT * FROM co_info WHERE email = '$username' AND password = '$password'";
+            $query2 = "SELECT * FROM academicaffair_info WHERE email = '$username' AND password = '$password'";
             $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
             $n_rows2 = mysqli_num_rows($result2);
 
@@ -159,7 +159,7 @@ switch($position){
                         'firstName' => $row['firstName'],
                         'middleName' => $row['middleName'],
                         'lastName' => $row['lastName'],
-                        'sysRank' => 2
+                        'sysRank' => 6
                     ];
                 }
                 header("HTTP/1.0 201 Success");
@@ -173,4 +173,5 @@ switch($position){
             header("HTTP/1.0 401 Incorrect Username");
         }
         break;
+
 }

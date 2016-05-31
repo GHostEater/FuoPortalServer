@@ -19,19 +19,16 @@ $semester = $_GET['semester'];
 if(floatval($exam) > 70){
     $exam = 70;
 }
-else{
-    $exam = round($exam);
-}
 
 $query = "select * from result_info WHERE code='$code' AND matricNo='$matricNo'AND sessionId='$sessionId'
 AND semester='$semester' AND exam='$exam'";
-$result = mysqli_query($con,$query)or die("Unable To Execute");
+$result = mysqli_query($con,$query)or die("Unable To Execute 1");
 $nRows = mysqli_num_rows($result);
 
 if($nRows == 0){
     $query2 = "select * from registerredcourses WHERE code='$code' AND matricNo='$matricNo'
     AND sessionId='$sessionId' AND semester='$semester'";
-    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute 2");
     $nRows2 = mysqli_num_rows($result2);
 
     if($nRows2 > 0){
@@ -40,7 +37,7 @@ if($nRows == 0){
         $result3 = mysqli_query($con,$query3);
         while($row = mysqli_fetch_assoc($result3)){
             $ca = $row['ca'];
-            $final = floatval($exam)+floatval($ca);
+            $final = round(floatval($exam)+floatval($ca));
             $gp = '';
 
             if($final >=70 && $final <=100){
@@ -63,10 +60,16 @@ if($nRows == 0){
                 $grade = 'F';
                 $gp = 0;
             }
+            if ($grade ==='A' || 'B' || 'C' || 'D'){
+                $statusId = 1;
+            }
+            elseif($grade === 'F'){
+                $statusId = 2;
+            }
 
-            $query4 = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade',gp='$gp' WHERE code='$code' AND matricNo='$matricNo'
+            $query4 = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade',gp='$gp',statusId='$statusId' WHERE code='$code' AND matricNo='$matricNo'
                     AND sessionId='$sessionId' AND semester='$semester'";
-            mysqli_query($con,$query4)or die("Unable To Execute");
+            mysqli_query($con,$query4)or die("Unable To Execute 3");
             header("HTTP/1.0 201 Success");
         }
     }

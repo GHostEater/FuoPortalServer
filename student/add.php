@@ -36,7 +36,7 @@ $password = $_GET['password'];
 $query = "insert into student_info VALUES('$matricNo','$firstName','$middleName','$lastName',
 '$sex','$email','$phoneNumber','$dateBirth','$nationality','$stateOrigin','$lga','$religion','$address',
 '$nextOfKin','$nextOfKinAddress','$collegeId','$departmentId','$majorId','$levelId',
-'$modeOfEntryId','$password',NULL)";
+'$modeOfEntryId','$password',NULL,NULL,NULL)";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

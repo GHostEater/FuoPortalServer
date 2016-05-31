@@ -20,28 +20,26 @@ $semester = $_GET['semester'];
 if($ca > 30){
     $ca = 30;
 }
-else{
-    $ca = round($ca);
-}
+
 
 $query = "select * from result_info WHERE code='$code' AND matricNo='$matricNo' AND sessionId='$sessionId'
 AND semester='$semester'";
-$result = mysqli_query($con,$query)or die("Unable To Execute");
+$result = mysqli_query($con,$query)or die("Unable To Execute 1");
 $nRows = mysqli_num_rows($result);
 
 if($nRows === 0){
     $query2 = "select * from registerredcourses where code='$code' and matricNo='$matricNo'
     and sessionId='$sessionId' AND semester='$semester'";
-    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute 2");
     $nRows2 = mysqli_num_rows($result2);
 
     if($nRows2 > 0){
-        $query2 = "insert into result_info VALUES('$code','$matricNo','$ca',NULL,NULL,NULL,'$sessionId','$semester',NULL,NULL)";
-        mysqli_query($con,$query2)or die("Unable To Execute");
+        $query2 = "insert into result_info VALUES('$code','$matricNo','$ca',NULL,NULL,NULL,'$sessionId','$semester',NULL,'0',NULL)";
+        mysqli_query($con,$query2)or die("Unable To Execute 3");
         header("HTTP/1.0 201 Success");
     }
     else{
-        header("HTTP/1.0 401 Student Not Registerred");
+        header("HTTP/1.0 401 Student Not Registered");
     }
 }
 else{

@@ -17,7 +17,7 @@ $lastName = $_GET['lastName'];
 $email = $_GET['email'];
 $password = $_GET['password'];
 
-$query = "insert into academicAffair_info VALUES(NULL, '$firstName','$middleName','$lastName','$email','$password')";
+$query = "insert into academicAffair_info VALUES(NULL,'$firstName','$middleName','$lastName','$email','$password')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
