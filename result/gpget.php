@@ -57,6 +57,8 @@ while($row = mysqli_fetch_assoc($result)){
         'tnu' => $row['tnu'],
         'ctcp' => $row['ctcp'],
         'ctnu' => $row['ctnu'],
+        'tce' => $row['tce'],
+        'prev_tce' => $row['prev_tce'],
         'statusId' => $row['statusId']
 
     ];

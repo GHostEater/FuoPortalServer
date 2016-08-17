@@ -2,20 +2,21 @@
 /**
  * Created by PhpStorm.
  * User: Bello J
- * Date: 5/18/2016
- * Time: 1:48 PM
+ * Date: 6/11/2016
+ * Time: 12:03 PM
  */
 ob_start();
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 include("../conn.php");
-$id = $_GET['id'];
 
+$code = $_GET['code'];
+$wavedBy = $_GET['wavedBy'];
+$matricNo = $_GET['matricNo'];
 
-$query = "UPDATE result_info SET rel='1' where sn='$id'";
+$query = "insert into wavedcourses(sn, code, wavedBy, matricNo) VALUES(NULL,'$code','$wavedBy','$matricNo')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
-sleep(2);
 header("HTTP/1.0 201 Success");
 ob_end_flush();

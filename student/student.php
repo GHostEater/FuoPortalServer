@@ -32,6 +32,7 @@ while($row = mysqli_fetch_assoc($result)){
     $result3  = mysqli_query($con,$query)or die("Unable To Execute");
     while($row3 = mysqli_fetch_assoc($result3)){
         $college = $row3['acronym'];
+        $collegeFull = $row3['name'];
     }
 
     $query = "select * from department WHERE sn='$departmentId'";
@@ -67,7 +68,7 @@ while($row = mysqli_fetch_assoc($result)){
         'sex' => $row['sex'],
         'email' => $row['email'],
         'phoneNumber' => $row['phoneNumber'],
-        'dateBirth' => $row['dob'],
+        'dateBirth' => $row['dateBirth'],
         'nationality' => $row['nationality'],
         'stateOrigin' => $row['stateOrigin'],
         'lga' => $row['lga'],
@@ -77,16 +78,24 @@ while($row = mysqli_fetch_assoc($result)){
         'nextOfKinAddress' => $row['nextOfKinAddress'],
         'collegeId' => $row['collegeId'],
         'college' => $college,
+        'collegeFull' => $collegeFull,
         'departmentId' => $row['departmentId'],
         'department' => $department,
         'majorId' => $row['majorId'],
         'major' => $major,
         'levelId' => $row['levelId'],
         'level' => $level,
+        'modeOfEntryId' => $row['modeOfEntryId'],
         'modeOfEntry' => $modeOfEntry,
         'password' => $row['password'],
         'img' => $row['img'],
-        'levelAdviserId' => $row['levelAdviserId']
+        'levelAdviserId' => $row['levelAdviserId'],
+        'status' => $row['status'],
+        'town' => $row['town'],
+        'genotype' => $row['genotype'],
+        'bloodGroup' => $row['bloodGroup'],
+        'oLevel' => $row['oLevel'],
+        'parentNo' => $row['parentNo']
     ];
     $i+=1;
 }

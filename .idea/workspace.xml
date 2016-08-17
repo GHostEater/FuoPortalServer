@@ -1,32 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/levelAdviser/assignStudent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/semester/change.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/editCa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/editExam.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/gpget.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/gprel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/release.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/transcript.php" />
+    <list default="true" id="dc58fd0e-1f83-40e1-a7df-7d1f0b7e4ec7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hostel/add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room/add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studentAffair/add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waving/add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roomAllocation/allocate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allocation/allocations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/courseRegistration/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hostel/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roomAllocation/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studentAffair/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waving/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result/deleteGP.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/academicaffair/disableEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hostel/edit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room/edit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studentAffair/edit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/academicaffair/getLogs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/academicaffair/getRequests.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hostel/hostel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/academicaffair/logEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/academicaffair/processRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/academicaffair/request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room/room.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roomAllocation/roomAllocation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studentAffair/studentAffair.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waving/waving.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\fuoPortal\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\fuoPortal\result_computation.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/academicaffair/add.php" afterPath="$PROJECT_DIR$/academicaffair/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/127_0_0_1.sql" afterPath="$PROJECT_DIR$/127_0_0_1.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/add.php" afterPath="$PROJECT_DIR$/course/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session/add.php" afterPath="$PROJECT_DIR$/session/add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/add.php" afterPath="$PROJECT_DIR$/student/add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/addCA.php" afterPath="$PROJECT_DIR$/result/addCA.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/addExam.php" afterPath="$PROJECT_DIR$/result/addExam.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/addGPA.php" afterPath="$PROJECT_DIR$/result/addGPA.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminLogin.php" afterPath="$PROJECT_DIR$/adminLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/co/co.php" afterPath="$PROJECT_DIR$/co/co.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/allocateAssisting.php" afterPath="$PROJECT_DIR$/allocation/allocateAssisting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/allocateCoordinator.php" afterPath="$PROJECT_DIR$/allocation/allocateCoordinator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/course.php" afterPath="$PROJECT_DIR$/course/course.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/edit.php" afterPath="$PROJECT_DIR$/result/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/academicaffair/edit.php" afterPath="$PROJECT_DIR$/academicaffair/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/edit.php" afterPath="$PROJECT_DIR$/course/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/edit.php" afterPath="$PROJECT_DIR$/student/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/editCa.php" afterPath="$PROJECT_DIR$/result/editCa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/editExam.php" afterPath="$PROJECT_DIR$/result/editExam.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fuoPortal.iml" afterPath="$PROJECT_DIR$/.idea/fuoPortal.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/gpget.php" afterPath="$PROJECT_DIR$/result/gpget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/gprel.php" afterPath="$PROJECT_DIR$/result/gprel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/myCourses.php" afterPath="$PROJECT_DIR$/allocation/myCourses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/result.php" afterPath="$PROJECT_DIR$/result/result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allocation/myAllocations.php" afterPath="$PROJECT_DIR$/allocation/myAllocations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/release.php" afterPath="$PROJECT_DIR$/result/release.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/student.php" afterPath="$PROJECT_DIR$/student/student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/uploadImg.php" afterPath="$PROJECT_DIR$/student/uploadImg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <ignored path="fuoPortal.iws" />
+    <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,162 +99,76 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - result_computation@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="result_computation" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="editlogs" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="FuoPortalServer" />
+    <favorites_list name="fuoPortal" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="examOfficer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examOfficer/examOfficer.php">
+      <file leaf-file-name="getLogs.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/academicaffair/getLogs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1003">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.5107527" vertical-offset="854" max-vertical-offset="1428">
+              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
               <folding>
-                <marker date="1464337294656" expanded="true" signature="224:254" placeholder="select * fro..examofficer..." />
-                <marker date="1464337294656" expanded="true" signature="555:605" placeholder="select * fro..lecturer_info..." />
-                <marker date="1464337294656" expanded="true" signature="870:919" placeholder="select * fro..department..." />
+                <marker date="1471415856492" expanded="true" signature="226:248" placeholder="select * fro..editlogs..." />
+                <marker date="1471415856492" expanded="true" signature="52:101" placeholder="select * fro..department..." />
+                <marker date="1471415856492" expanded="true" signature="124:167" placeholder="select * fro..college..." />
+                <marker date="1471415856492" expanded="true" signature="265:322" placeholder="select * fro..academicaffair_info..." />
+                <marker date="1471415856492" expanded="true" signature="468:482" placeholder="select * fro..edite..." />
+                <marker date="1471415856492" expanded="true" signature="468:516" placeholder="select * fro..lecturer_info..." />
+                <marker date="1471415856492" expanded="true" signature="832:881" placeholder="select * fro..department..." />
+                <marker date="1471415856492" expanded="true" signature="1057:1100" placeholder="select * fro..college..." />
+                <marker date="1471415856492" expanded="true" signature="1283:1329" placeholder="select * fro..result_info..." />
+                <marker date="1471415856492" expanded="true" signature="1589:1642" placeholder="select * fro..student_info..." />
+                <marker date="1471415856492" expanded="true" signature="1869:1912" placeholder="select * fro..session..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result_computation.resultgpa" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..resultgpa">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_computation.lecturer_info" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_computation.co_info" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..co_info">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_computation.result_info" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..result_info">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
+      <file leaf-file-name="logEdit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/academicaffair/logEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="4199">
-              <caret line="156" column="74" selection-start-line="156" selection-start-column="74" selection-end-line="156" selection-end-column="74" />
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="510">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
-                <marker date="1464337294638" expanded="true" signature="286:334" placeholder="SELECT * FRO..admin..." />
-                <marker date="1464337294638" expanded="true" signature="487:562" placeholder="SELECT * FRO..admin..." />
-                <marker date="1464337294638" expanded="true" signature="1134:1193" placeholder="SELECT * FRO..academicaffair_info..." />
-                <marker date="1464337294638" expanded="true" signature="1349:1435" placeholder="SELECT * FRO..academicaffair_info..." />
-                <marker date="1464337294638" expanded="true" signature="2191:2246" placeholder="SELECT * FRO..student_info..." />
-                <marker date="1464337294638" expanded="true" signature="2418:2500" placeholder="SELECT * FRO..student_info..." />
-                <marker date="1464337294638" expanded="true" signature="2917:2960" placeholder="select * fro..college..." />
-                <marker date="1464337294638" expanded="true" signature="3153:3202" placeholder="select * fro..department..." />
-                <marker date="1464337294638" expanded="true" signature="3406:3445" placeholder="select * fro..major..." />
-                <marker date="1464337294638" expanded="true" signature="5165:5218" placeholder="SELECT * FRO..lecturer_info..." />
-                <marker date="1464337294638" expanded="true" signature="5406:5486" placeholder="SELECT * FRO..lecturer_info..." />
-                <marker date="1464337294638" expanded="true" signature="5934:5979" placeholder="select * fro..college..." />
-                <marker date="1464337294638" expanded="true" signature="6185:6236" placeholder="select * fro..department..." />
-                <marker date="1464337294638" expanded="true" signature="6456:6509" placeholder="SELECT * FRO..hod_info..." />
-                <marker date="1464337294638" expanded="true" signature="6731:6792" placeholder="SELECT * FRO..examofficer_info..." />
-                <marker date="1464337294638" expanded="true" signature="7014:7071" placeholder="SELECT * FRO..leveladviser..." />
-                <marker date="1464337294638" expanded="true" signature="8939:8986" placeholder="SELECT * FRO..co_info..." />
-                <marker date="1464337294638" expanded="true" signature="9190:9264" placeholder="SELECT * FRO..co_info..." />
-                <marker date="1464337294638" expanded="true" signature="9624:9667" placeholder="select * fro..college..." />
+                <marker date="1471418459191" expanded="true" signature="441:602" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examOfficer/delete.php">
+      <file leaf-file-name="getRequests.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/academicaffair/getRequests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state vertical-scroll-proportion="-20.153847" vertical-offset="139" max-vertical-offset="1156">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
-                <marker date="1464337294629" expanded="true" signature="243:288" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examOfficer/add.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
-              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-              <folding>
-                <marker date="1464337294646" expanded="true" signature="299:360" placeholder="select * fro..examofficer..." />
-                <marker date="1464337294646" expanded="true" signature="495:560" placeholder="select * fro..examofficer..." />
-                <marker date="1464337294646" expanded="true" signature="713:784" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="academicAffair.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/academicaffair/academicAffair.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="629">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-              <folding>
-                <marker date="1461341795844" expanded="true" signature="223:256" placeholder="select * fro..academicAffair_info..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lecturerRank.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lecturerRank/lecturerRank.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1461944262330" expanded="true" signature="223:249" placeholder="select * fro..lecturerRank..." />
+                <marker date="1471412374218" expanded="true" signature="226:252" placeholder="select * fro..editrequests..." />
+                <marker date="1471412374218" expanded="true" signature="480:530" placeholder="select * fro..lecturer_info..." />
+                <marker date="1471412374218" expanded="true" signature="846:895" placeholder="select * fro..department..." />
+                <marker date="1471412374218" expanded="true" signature="1073:1116" placeholder="select * fro..college..." />
+                <marker date="1471412374218" expanded="true" signature="1294:1351" placeholder="select * fro..academicaffair_info..." />
               </folding>
             </state>
           </provider>
@@ -225,63 +177,22 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hod/hod.php" />
-        <option value="$PROJECT_DIR$/hod/add.php" />
-        <option value="$PROJECT_DIR$/student/edit.php" />
-        <option value="$PROJECT_DIR$/semester/semester.php" />
-        <option value="$PROJECT_DIR$/courseRegistration/registerredCourses.php" />
-        <option value="$PROJECT_DIR$/student/uploadImg.php" />
-        <option value="$PROJECT_DIR$/course/add.php" />
-        <option value="$PROJECT_DIR$/course/course.php" />
-        <option value="$PROJECT_DIR$/course/edit.php" />
-        <option value="$PROJECT_DIR$/courseRegistration/registrableCourses.php" />
-        <option value="$PROJECT_DIR$/courseRegistration/deleteRegistrableCourse.php" />
-        <option value="$PROJECT_DIR$/courseRegistration/addRegistrableCourse.php" />
-        <option value="$PROJECT_DIR$/courseRegistration/register.php" />
-        <option value="$PROJECT_DIR$/lecturer/lecturer.php" />
-        <option value="dbtable:/a5f01dfd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..result_info" />
-        <option value="$PROJECT_DIR$/allocation/myAllocations.php" />
-        <option value="$PROJECT_DIR$/allocation/allocate.php" />
-        <option value="$PROJECT_DIR$/allocation/allocateAssissting.php" />
-        <option value="$PROJECT_DIR$/studentLogin.php" />
-        <option value="$PROJECT_DIR$/adminLogin.php" />
-        <option value="$PROJECT_DIR$/examofficer/delete.php" />
-        <option value="$PROJECT_DIR$/examofficer/examofficer.php" />
-        <option value="$PROJECT_DIR$/leveladviser/leveladviser.php" />
-        <option value="$PROJECT_DIR$/leveladviser/delete.php" />
-        <option value="$PROJECT_DIR$/leveladviser/add.php" />
-        <option value="$PROJECT_DIR$/levelAdviser/levelAdviser.php" />
-        <option value="$PROJECT_DIR$/levelAdviser/add.php" />
-        <option value="$PROJECT_DIR$/levelAdviser/assignStudent.php" />
-        <option value="$PROJECT_DIR$/allocation/myCourses.php" />
-        <option value="$PROJECT_DIR$/student/student.php" />
-        <option value="$PROJECT_DIR$/student/add.php" />
+        <option value="$PROJECT_DIR$/academicaffair/processRequest.php" />
+        <option value="$PROJECT_DIR$/academicaffair/disableEdit.php" />
+        <option value="$PROJECT_DIR$/academicaffair/request.php" />
+        <option value="$PROJECT_DIR$/academicaffair/getRequests.php" />
         <option value="$PROJECT_DIR$/result/addCA.php" />
-        <option value="$PROJECT_DIR$/result/release.php" />
-        <option value="$PROJECT_DIR$/result/gprel.php" />
-        <option value="$PROJECT_DIR$/semester/change.php" />
-        <option value="$PROJECT_DIR$/academicaffair/add.php" />
-        <option value="$PROJECT_DIR$/co/co.php" />
-        <option value="$PROJECT_DIR$/result/transcript.php" />
-        <option value="$PROJECT_DIR$/result/edit.php" />
         <option value="$PROJECT_DIR$/result/addExam.php" />
-        <option value="$PROJECT_DIR$/result/editExam.php" />
-        <option value="$PROJECT_DIR$/result/editCa.php" />
-        <option value="$PROJECT_DIR$/result/result.php" />
-        <option value="$PROJECT_DIR$/result/gpget.php" />
         <option value="$PROJECT_DIR$/result/addGPA.php" />
-        <option value="$PROJECT_DIR$/examofficer/add.php" />
-        <option value="$PROJECT_DIR$/examOfficer/examOfficer.php" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/examOfficer/delete.php" />
-        <option value="$PROJECT_DIR$/academicaffair/academicAffair.php" />
-        <option value="$PROJECT_DIR$/examOfficer/add.php" />
+        <option value="$PROJECT_DIR$/result/gprel.php" />
+        <option value="$PROJECT_DIR$/result/release.php" />
+        <option value="$PROJECT_DIR$/academicaffair/getLogs.php" />
+        <option value="$PROJECT_DIR$/academicaffair/logEdit.php" />
       </list>
     </option>
   </component>
@@ -318,16 +229,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,7 +243,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
+              <option name="myItemId" value="fuoPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,103 +253,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="fuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lecturerRank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examOfficer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FuoPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="academicaffair" />
+              <option name="myItemId" value="levelAdviser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\FuoPortal" />
       <recent name="C:\wamp\www\fuoPortal" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\fuoPortal" />
-      <recent name="C:\wamp\www\FuoPortalServer" />
     </key>
   </component>
   <component name="RunManager">
@@ -459,29 +284,23 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
     <list size="0" />
@@ -492,295 +311,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b30560a9-752b-47da-a277-5a759e894e7e" name="Default" comment="" />
-      <created>1460731441802</created>
+      <changelist id="dc58fd0e-1f83-40e1-a7df-7d1f0b7e4ec7" name="Default" comment="" />
+      <created>1471241991347</created>
       <option name="number" value="Default" />
-      <updated>1460731441802</updated>
+      <updated>1471241991347</updated>
     </task>
-    <task id="LOCAL-00001" summary="commir">
-      <created>1460802570995</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1460802570995</updated>
-    </task>
-    <task id="LOCAL-00002" summary="commit">
-      <created>1460975861653</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1460975861653</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit">
-      <created>1461152197574</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1461152197574</updated>
-    </task>
-    <task id="LOCAL-00004" summary="commit">
-      <created>1461152374805</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1461152374805</updated>
-    </task>
-    <task id="LOCAL-00005" summary="commit">
-      <created>1461155640621</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1461155640621</updated>
-    </task>
-    <task id="LOCAL-00006" summary="commit">
-      <created>1461155649353</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1461155649353</updated>
-    </task>
-    <task id="LOCAL-00007" summary="commit">
-      <created>1461247874700</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1461247874700</updated>
-    </task>
-    <task id="LOCAL-00008" summary="commit">
-      <created>1461248054221</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1461248054221</updated>
-    </task>
-    <task id="LOCAL-00009" summary="commit">
-      <created>1461252831982</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1461252831982</updated>
-    </task>
-    <task id="LOCAL-00010" summary="commit">
-      <created>1461252889330</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1461252889330</updated>
-    </task>
-    <task id="LOCAL-00011" summary="commit">
-      <created>1461252951262</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1461252951262</updated>
-    </task>
-    <task id="LOCAL-00012" summary="commit">
-      <created>1461252971600</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1461252971600</updated>
-    </task>
-    <task id="LOCAL-00013" summary="commit">
-      <created>1461252980946</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1461252980946</updated>
-    </task>
-    <task id="LOCAL-00014" summary="commit">
-      <created>1461253015317</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1461253015317</updated>
-    </task>
-    <task id="LOCAL-00015" summary="commit">
-      <created>1461253079207</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1461253079207</updated>
-    </task>
-    <task id="LOCAL-00016" summary="commit">
-      <created>1461253139443</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1461253139443</updated>
-    </task>
-    <task id="LOCAL-00017" summary="commit">
-      <created>1461254594078</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1461254594078</updated>
-    </task>
-    <task id="LOCAL-00018" summary="commit">
-      <created>1461332037535</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1461332037535</updated>
-    </task>
-    <task id="LOCAL-00019" summary="course allocation done!!!">
-      <created>1461422695205</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1461422695205</updated>
-    </task>
-    <task id="LOCAL-00020" summary="course allocation done!!!">
-      <created>1461425329475</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1461425329475</updated>
-    </task>
-    <task id="LOCAL-00021" summary="code linting">
-      <created>1461681203312</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1461681203312</updated>
-    </task>
-    <task id="LOCAL-00022" summary="code linting">
-      <created>1461681268121</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1461681268121</updated>
-    </task>
-    <task id="LOCAL-00023" summary="code linting">
-      <created>1461756545217</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1461756545217</updated>
-    </task>
-    <task id="LOCAL-00024" summary="code linting">
-      <created>1461756595771</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1461756595771</updated>
-    </task>
-    <task id="LOCAL-00025" summary="code linting">
-      <created>1461760908206</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1461760908206</updated>
-    </task>
-    <task id="LOCAL-00026" summary="code linting">
-      <created>1461768545708</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1461768545708</updated>
-    </task>
-    <task id="LOCAL-00027" summary="code linting">
-      <created>1461922033757</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1461922033757</updated>
-    </task>
-    <task id="LOCAL-00028" summary="code linting">
-      <created>1461943849742</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1461943849742</updated>
-    </task>
-    <task id="LOCAL-00029" summary="start: courseRegistration">
-      <created>1462108231032</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1462108231032</updated>
-    </task>
-    <task id="LOCAL-00030" summary="start: courseRegistration">
-      <created>1462108256277</created>
-      <option name="number" value="00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1462108256277</updated>
-    </task>
-    <task id="LOCAL-00031" summary="start: courseRegistration">
-      <created>1462108316451</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1462108316452</updated>
-    </task>
-    <task id="LOCAL-00032" summary="start: courseRegistration">
-      <created>1462117482938</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1462117482938</updated>
-    </task>
-    <task id="LOCAL-00033" summary="start: courseRegistration">
-      <created>1462354172669</created>
-      <option name="number" value="00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1462354172669</updated>
-    </task>
-    <task id="LOCAL-00034" summary="start: courseRegistration">
-      <created>1462362595785</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1462362595785</updated>
-    </task>
-    <task id="LOCAL-00035" summary="resultUpload">
-      <created>1462380014259</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1462380014259</updated>
-    </task>
-    <task id="LOCAL-00036" summary="resultUpload">
-      <created>1462462827822</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1462462827822</updated>
-    </task>
-    <task id="LOCAL-00037" summary="resultUpload">
-      <created>1462802132313</created>
-      <option name="number" value="00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1462802132313</updated>
-    </task>
-    <task id="LOCAL-00038" summary="resultUpload">
-      <created>1462809414307</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1462809414307</updated>
-    </task>
-    <task id="LOCAL-00039" summary="resultUpload">
-      <created>1462813229149</created>
-      <option name="number" value="00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1462813229149</updated>
-    </task>
-    <task id="LOCAL-00040" summary="result Computation">
-      <created>1462900001224</created>
-      <option name="number" value="00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1462900001224</updated>
-    </task>
-    <option name="localTasksCounter" value="41" />
     <servers />
-  </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16837482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21709532" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16983895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32440946" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -801,467 +360,295 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="commir" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="course allocation done!!!" />
-    <MESSAGE value="code linting" />
-    <MESSAGE value="start: courseRegistration" />
-    <MESSAGE value="resultUpload" />
-    <MESSAGE value="result Computation" />
-    <option name="LAST_COMMIT_MESSAGE" value="result Computation" />
+    <MESSAGE value="Edit Requests, Log Edit Requests, Optimization of Result Upload &#10;(No longer Reloads Page), Solved DDOS issue with uploading by sleeping upload for 2 seconds after each request." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit Requests, Log Edit Requests, Optimization of Result Upload &#10;(No longer Reloads Page), Solved DDOS issue with uploading by sleeping upload for 2 seconds after each request." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/levelAdviser/levelAdviser.php">
+    <entry file="dbDummy://db-console:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68345326" vertical-offset="555" max-vertical-offset="1156">
-          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/levelAdviser/assignStudent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="595">
-          <caret line="16" column="95" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..leveladviser">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8884892" vertical-offset="169" max-vertical-offset="833">
-          <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allocation/myCourses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3529413" vertical-offset="118" max-vertical-offset="901">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..allocation_info">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/addCA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56169426" vertical-offset="307" max-vertical-offset="901">
-          <caret line="36" column="123" selection-start-line="36" selection-start-column="123" selection-end-line="36" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/release.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="425">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/semester/semester.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="544">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/gprel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="425">
-          <caret line="16" column="53" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/semester/change.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7032374" vertical-offset="0" max-vertical-offset="595">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/college/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/academicaffair/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/college/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/academicaffair/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/co/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/co/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/co/co.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.901961" vertical-offset="277" max-vertical-offset="833">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/academicaffair/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3333335" vertical-offset="0" max-vertical-offset="493">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="816">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.392157" vertical-offset="728" max-vertical-offset="3094">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/transcript.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6420864" vertical-offset="73" max-vertical-offset="1360">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/co/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/major/major.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6510791" vertical-offset="362" max-vertical-offset="918">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..academicaffair_info">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecturer/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6089552" vertical-offset="204" max-vertical-offset="629">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecturer/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8074713" vertical-offset="281" max-vertical-offset="629">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecturer/lecturer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.321839" vertical-offset="808" max-vertical-offset="1360">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/levelAdviser/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81654674" vertical-offset="56" max-vertical-offset="612">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6887661" vertical-offset="0" max-vertical-offset="544">
-          <caret line="22" column="179" selection-start-line="22" selection-start-column="179" selection-end-line="22" selection-end-column="179" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/editCa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2352943" vertical-offset="617" max-vertical-offset="1173">
-          <caret line="58" column="104" selection-start-line="58" selection-start-column="104" selection-end-line="58" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/editExam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.980392" vertical-offset="579" max-vertical-offset="1173">
-          <caret line="58" column="108" selection-start-line="58" selection-start-column="108" selection-end-line="58" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/addExam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.980392" vertical-offset="834" max-vertical-offset="1496">
-          <caret line="67" column="13" selection-start-line="62" selection-start-column="12" selection-end-line="67" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.901961" vertical-offset="719" max-vertical-offset="1360">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/addGPA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="867">
-          <caret line="40" column="107" selection-start-line="40" selection-start-column="107" selection-end-line="40" selection-end-column="107" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..semester">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/gpget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1224">
-          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0791367" vertical-offset="991" max-vertical-offset="1700">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..student_info">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hod/hod.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseRegistration/addRegistrableCourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecturerRank/lecturerRank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461944262330" expanded="true" signature="223:249" placeholder="select * fro..lecturerRank..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="4199">
-          <caret line="156" column="74" selection-start-line="156" selection-start-column="74" selection-end-line="156" selection-end-column="74" />
-          <folding>
-            <marker date="1464337294638" expanded="true" signature="286:334" placeholder="SELECT * FRO..admin..." />
-            <marker date="1464337294638" expanded="true" signature="487:562" placeholder="SELECT * FRO..admin..." />
-            <marker date="1464337294638" expanded="true" signature="1134:1193" placeholder="SELECT * FRO..academicaffair_info..." />
-            <marker date="1464337294638" expanded="true" signature="1349:1435" placeholder="SELECT * FRO..academicaffair_info..." />
-            <marker date="1464337294638" expanded="true" signature="2191:2246" placeholder="SELECT * FRO..student_info..." />
-            <marker date="1464337294638" expanded="true" signature="2418:2500" placeholder="SELECT * FRO..student_info..." />
-            <marker date="1464337294638" expanded="true" signature="2917:2960" placeholder="select * fro..college..." />
-            <marker date="1464337294638" expanded="true" signature="3153:3202" placeholder="select * fro..department..." />
-            <marker date="1464337294638" expanded="true" signature="3406:3445" placeholder="select * fro..major..." />
-            <marker date="1464337294638" expanded="true" signature="5165:5218" placeholder="SELECT * FRO..lecturer_info..." />
-            <marker date="1464337294638" expanded="true" signature="5406:5486" placeholder="SELECT * FRO..lecturer_info..." />
-            <marker date="1464337294638" expanded="true" signature="5934:5979" placeholder="select * fro..college..." />
-            <marker date="1464337294638" expanded="true" signature="6185:6236" placeholder="select * fro..department..." />
-            <marker date="1464337294638" expanded="true" signature="6456:6509" placeholder="SELECT * FRO..hod_info..." />
-            <marker date="1464337294638" expanded="true" signature="6731:6792" placeholder="SELECT * FRO..examofficer_info..." />
-            <marker date="1464337294638" expanded="true" signature="7014:7071" placeholder="SELECT * FRO..leveladviser..." />
-            <marker date="1464337294638" expanded="true" signature="8939:8986" placeholder="SELECT * FRO..co_info..." />
-            <marker date="1464337294638" expanded="true" signature="9190:9264" placeholder="SELECT * FRO..co_info..." />
-            <marker date="1464337294638" expanded="true" signature="9624:9667" placeholder="select * fro..college..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examOfficer/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <marker date="1464337294629" expanded="true" signature="243:288" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/academicaffair/academicAffair.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="629">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.390681" vertical-offset="3" max-vertical-offset="629">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
-            <marker date="1461341795844" expanded="true" signature="223:256" placeholder="select * fro..academicAffair_info..." />
+            <marker date="1461341795844" expanded="true" signature="-1:-1" placeholder="select * fro..academicAffair_info..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examOfficer/add.php">
+    <entry file="file://$PROJECT_DIR$/academicaffair/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.74862385" vertical-offset="0" max-vertical-offset="545">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
-            <marker date="1464337294646" expanded="true" signature="299:360" placeholder="select * fro..examofficer..." />
-            <marker date="1464337294646" expanded="true" signature="495:560" placeholder="select * fro..examofficer..." />
-            <marker date="1464337294646" expanded="true" signature="713:784" placeholder="insert into ..." />
+            <marker date="1466787085632" expanded="true" signature="-1:-1" placeholder="UPDATE acade..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examOfficer/examOfficer.php">
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..hod_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..allocation_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..lecturer_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/academicaffair/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1003">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.5302752" vertical-offset="0" max-vertical-offset="545">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
-            <marker date="1464337294656" expanded="true" signature="224:254" placeholder="select * fro..examofficer..." />
-            <marker date="1464337294656" expanded="true" signature="555:605" placeholder="select * fro..lecturer_info..." />
-            <marker date="1464337294656" expanded="true" signature="870:919" placeholder="select * fro..department..." />
+            <marker date="1463992767241" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..result_info">
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..editrequests">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..resultgpa">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/academicaffair/disableEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483871" vertical-offset="0" max-vertical-offset="558">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <marker date="1471352935428" expanded="true" signature="-1:-1" placeholder="UPDATE editr..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..lecturer_info">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/academicaffair/request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4678899" vertical-offset="0" max-vertical-offset="545">
+          <caret line="15" column="99" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
+          <folding>
+            <marker date="1471355312588" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1d623ddd/e5af5e37-d3d5-4312-a9e4-356796ec01fd/result_computation..co_info">
+    <entry file="file://$PROJECT_DIR$/result/addCA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81284404" vertical-offset="373" max-vertical-offset="969">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <marker date="1471413234178" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1471413234178" expanded="true" signature="-1:-1" placeholder="select * fro..registerredcourses..." />
+            <marker date="1471413234178" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/addGPA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7816514" vertical-offset="390" max-vertical-offset="952">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <marker date="1471413234143" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/addExam.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81284404" vertical-offset="951" max-vertical-offset="1547">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+          <folding>
+            <marker date="1471413234120" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1471413234120" expanded="true" signature="-1:-1" placeholder="select * fro..registerredcourses..." />
+            <marker date="1471413234120" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1471413234120" expanded="true" signature="-1:-1" placeholder="UPDATE resul..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/gprel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483871" vertical-offset="0" max-vertical-offset="558">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <marker date="1471413251186" expanded="true" signature="-1:-1" placeholder="UPDATE resul..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/release.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483871" vertical-offset="0" max-vertical-offset="558">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <marker date="1471413261841" expanded="true" signature="-1:-1" placeholder="UPDATE resul..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/transcript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1464076889158" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1464076889158" expanded="true" signature="-1:-1" placeholder="select * fro..student_info..." />
+            <marker date="1464076889158" expanded="true" signature="-1:-1" placeholder="select * fro..session..." />
+            <marker date="1464076889158" expanded="true" signature="-1:-1" placeholder="select * fro..course_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1464178373475" expanded="true" signature="-1:-1" placeholder="select * fro..result_info..." />
+            <marker date="1464178373475" expanded="true" signature="-1:-1" placeholder="select * fro..student_info..." />
+            <marker date="1464178373475" expanded="true" signature="-1:-1" placeholder="select * fro..session..." />
+            <marker date="1464178373475" expanded="true" signature="-1:-1" placeholder="select * fro..course_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..result_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/academicaffair/processRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39605734" vertical-offset="0" max-vertical-offset="558">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <marker date="1471352661603" expanded="true" signature="-1:-1" placeholder="UPDATE editr..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/academicaffair/getRequests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.153847" vertical-offset="139" max-vertical-offset="1156">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <marker date="1471412374218" expanded="true" signature="226:252" placeholder="select * fro..editrequests..." />
+            <marker date="1471412374218" expanded="true" signature="480:530" placeholder="select * fro..lecturer_info..." />
+            <marker date="1471412374218" expanded="true" signature="846:895" placeholder="select * fro..department..." />
+            <marker date="1471412374218" expanded="true" signature="1073:1116" placeholder="select * fro..college..." />
+            <marker date="1471412374218" expanded="true" signature="1294:1351" placeholder="select * fro..academicaffair_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..editlogs">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/academicaffair/logEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="510">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <marker date="1471418459191" expanded="true" signature="441:602" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a5f01dfd/eb0c5955-4008-4ee1-b8d1-adcf3940c10a/result_computation..academicaffair_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/academicaffair/getLogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5107527" vertical-offset="854" max-vertical-offset="1428">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <marker date="1471415856492" expanded="true" signature="226:248" placeholder="select * fro..editlogs..." />
+            <marker date="1471415856492" expanded="true" signature="52:101" placeholder="select * fro..department..." />
+            <marker date="1471415856492" expanded="true" signature="124:167" placeholder="select * fro..college..." />
+            <marker date="1471415856492" expanded="true" signature="265:322" placeholder="select * fro..academicaffair_info..." />
+            <marker date="1471415856492" expanded="true" signature="468:482" placeholder="select * fro..edite..." />
+            <marker date="1471415856492" expanded="true" signature="468:516" placeholder="select * fro..lecturer_info..." />
+            <marker date="1471415856492" expanded="true" signature="832:881" placeholder="select * fro..department..." />
+            <marker date="1471415856492" expanded="true" signature="1057:1100" placeholder="select * fro..college..." />
+            <marker date="1471415856492" expanded="true" signature="1283:1329" placeholder="select * fro..result_info..." />
+            <marker date="1471415856492" expanded="true" signature="1589:1642" placeholder="select * fro..student_info..." />
+            <marker date="1471415856492" expanded="true" signature="1869:1912" placeholder="select * fro..session..." />
+          </folding>
         </state>
       </provider>
     </entry>

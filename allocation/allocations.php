@@ -1,18 +1,17 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: GHostEater
- * Date: 23-Apr-16
- * Time: 12:48 PM
+ * User: Bello J
+ * Date: 6/12/2016
+ * Time: 8:43 AM
  */
 ob_start();
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 include("../conn.php");
-$id = $_GET['id'];
 
-$query = "select * from allocation_info WHERE allocatedBy='$id'";
+$query = "select * from allocation_info";
 $result = mysqli_query($con,$query)or die("Unable To Execute");
 $i = 0;
 $resultsArr = "";
@@ -22,6 +21,7 @@ while($row = mysqli_fetch_assoc($result)){
     $code = $row['code'];
     $lecturerId = $row['lecturerId'];
     $sessionId = $row['sessionId'];
+    $allocatedBy = $row['allocatedBy'];
 
     $query2 = "select * from course_info WHERE code='$code'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
@@ -42,6 +42,11 @@ while($row = mysqli_fetch_assoc($result)){
         $middleName = $row2['middleName'];
         $lastName = $row2['lastName'];
     }
+    $query2 = "select * from lecturer_info WHERE sn='$allocatedBy'";
+    $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $name = $row2['lastName'].', '.$row2['firstName'].' '.$row2['middleName'];
+    }
     $query2 = "select * from session WHERE sn='$sessionId'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
     while($row2 = mysqli_fetch_assoc($result2)){
@@ -61,7 +66,10 @@ while($row = mysqli_fetch_assoc($result)){
         'middleName' => $middleName,
         'lastName' => $lastName,
         'position' => $row['position'],
-        'departmentId' => $row['departmentId']
+        'departmentId' => $row['departmentId'],
+        'allocatedById' => $row['allocatedBy'],
+        'allocatedBy' => $name,
+        'collegeId' => $row['collegeId']
     ];
     $i+=1;
 }

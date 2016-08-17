@@ -19,6 +19,8 @@ $tnu = $_GET['tnu'];
 $ctnu = $_GET['ctnu'];
 $prev_ctnu = $_GET['prev_ctnu'];
 $prev_cgpa = $_GET['prev_cgpa'];
+$prev_tce = $_GET['prev_tce'];
+$tce = $_GET['tce'];
 $gpa = $_GET['gpa'];
 $cgpa = $_GET['cgpa'];
 $sessionId = $_GET['sessionId'];
@@ -38,9 +40,12 @@ elseif($cgpa <= 1.00) {
 }
 
 
-$query = "insert into resultgpa(sn,sessionId,semester,gpa,cgpa,matricNo,rel,tcp,tnu,ctcp,ctnu,prev_cgpa,statusId,prev_ctcp,prev_ctnu)
-VALUES(NULL,'$sessionId','$semester','$gpa','$cgpa','$matricNo','0','$tcp','$tnu','$ctcp','$ctnu','$prev_cgpa','$statusId','$prev_ctcp','$prev_ctnu')";
+$query = "insert into resultgpa(sn,sessionId,semester,gpa,cgpa,matricNo,rel,tcp,tnu,ctcp,ctnu,prev_cgpa,statusId,
+prev_ctcp,prev_ctnu,prev_tce,tce)
+VALUES(NULL,'$sessionId','$semester','$gpa','$cgpa','$matricNo','0','$tcp','$tnu','$ctcp','$ctnu','$prev_cgpa',
+'$statusId','$prev_ctcp','$prev_ctnu','$prev_tce','$tce')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
+sleep(2);
 header("HTTP/1.0 201 Success");
 ob_end_flush();

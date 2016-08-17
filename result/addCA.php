@@ -34,15 +34,19 @@ if($nRows === 0){
     $nRows2 = mysqli_num_rows($result2);
 
     if($nRows2 > 0){
-        $query2 = "insert into result_info VALUES('$code','$matricNo','$ca',NULL,NULL,NULL,'$sessionId','$semester',NULL,'0',NULL)";
+        $query2 = "insert into result_info(code,matricNo,ca,exam,final,grade,sessionId,semester,rel,gp,statusId)
+VALUES('$code','$matricNo','$ca',NULL,NULL,NULL,'$sessionId','$semester','0',NULL,NULL)";
         mysqli_query($con,$query2)or die("Unable To Execute 3");
+        sleep(2);
         header("HTTP/1.0 201 Success");
     }
     else{
+        sleep(2);
         header("HTTP/1.0 401 Student Not Registered");
     }
 }
 else{
+    sleep(2);
     header("HTTP/1.0 402 Already Uploaded");
 }
 ob_end_flush();

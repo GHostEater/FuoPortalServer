@@ -16,8 +16,12 @@ $allocatedBy = $_GET['allocatedBy'];
 $sessionId = $_GET['sessionId'];
 $semester = $_GET['semester'];
 $position = $_GET['position'];
+$departmentId = $_GET['departmentId'];
+$collegeId = $_GET['collegeId'];
 
-$query2 = "insert into allocation_info VALUES(NULL,'$lecturerId','$code','$allocatedBy','$semester','$sessionId','$position')";
+$query2 = "insert into allocation_info(sn,lecturerId,code,allocatedBy,semester,sessionId,position,departmentId,collegeId)
+VALUES(NULL,'$lecturerId','$code','$allocatedBy','$semester','$sessionId',
+'$position','$departmentId','$collegeId')";
 mysqli_query($con,$query2)or die("Unable To Execute");
 header("HTTP/1.0 201 Success");
 

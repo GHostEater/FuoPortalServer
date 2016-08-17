@@ -19,10 +19,11 @@ $departmentId = $_GET['departmentId'];
 $majorId = $_GET['majorId'];
 $prerequisiteFor = $_GET['prerequisiteFor'];
 $type = $_GET['type'];
+$collegeId = $_GET['collegeId'];
 
 
 $query = "UPDATE course_info SET code='$code',title='$title',unit='$unit',semester='$semester',
-levelId='$levelId',departmentId='$departmentId',type='$type' where code = '$code'";
+levelId='$levelId',departmentId='$departmentId',type='$type',collegeId='$collegeId' where code = '$code'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");

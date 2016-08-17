@@ -23,6 +23,7 @@ while($row = mysqli_fetch_assoc($result)){
     $levelId = $row['levelId'];
     $departmentId = $row['departmentId'];
     $majorId = $row['majorId'];
+    $collegeId = $row['collegeId'];
 
     $query2 = "select * from level WHERE sn='$levelId'";
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
@@ -34,6 +35,12 @@ while($row = mysqli_fetch_assoc($result)){
     $result2 = mysqli_query($con,$query2)or die("Unable To Execute");
     while($row2 = mysqli_fetch_assoc($result2)){
         $department = $row2['name'];
+    }
+    $query = "select * from college WHERE sn='$collegeId'";
+    $result3  = mysqli_query($con,$query)or die("Unable To Execute");
+    while($row3 = mysqli_fetch_assoc($result3)){
+        $college = $row3['acronym'];
+        $collegeFull = $row3['name'];
     }
 
     $query2 = "select * from major WHERE sn='$majorId'";
@@ -51,8 +58,10 @@ while($row = mysqli_fetch_assoc($result)){
         'level' => $level,
         'departmentId' => $row['departmentId'],
         'department' => $department,
+        'college' => $college,
+        'collegeId' => $collegeId,
         'major' => $major,
-        '$type' => $row['type']
+        'type' => $row['type']
     ];
     $i+=1;
 }

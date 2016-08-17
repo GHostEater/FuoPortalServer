@@ -49,11 +49,11 @@ while($row = mysqli_fetch_assoc($result)){
         $grade = 'F';
         $gp = 0;
     }
-    if ($grade ==='A' || 'B' || 'C' || 'D'){
-        $statusId = 1;
-    }
-    elseif($grade === 'F'){
+    if($grade === 'F'){
         $statusId = 2;
+    }
+    else{
+        $statusId = 1;
     }
 
     $query = "UPDATE result_info SET ca='$ca',final='$final',grade='$grade',gp='$gp',statusId='$statusId' where sn = '$id'";

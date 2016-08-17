@@ -60,24 +60,27 @@ if($nRows == 0){
                 $grade = 'F';
                 $gp = 0;
             }
-            if ($grade ==='A' || 'B' || 'C' || 'D'){
-                $statusId = 1;
-            }
-            elseif($grade === 'F'){
+            if($grade === 'F'){
                 $statusId = 2;
+            }
+            else{
+                $statusId = 1;
             }
 
             $query4 = "UPDATE result_info SET exam='$exam',final='$final',grade='$grade',gp='$gp',statusId='$statusId' WHERE code='$code' AND matricNo='$matricNo'
                     AND sessionId='$sessionId' AND semester='$semester'";
             mysqli_query($con,$query4)or die("Unable To Execute 3");
+            sleep(2);
             header("HTTP/1.0 201 Success");
         }
     }
     else{
+        sleep(2);
         header("HTTP/1.0 401 Student Not Registered");
     }
 }
 else{
+    sleep(2);
     header("HTTP/1.0 402 Already Upload");
 }
 ob_end_flush();

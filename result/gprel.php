@@ -16,5 +16,6 @@ $id = $_GET['id'];
 $query = "UPDATE resultgpa SET rel='1' where sn='$id'";
 mysqli_query($con,$query)or die("Unable To Execute");
 
+sleep(2);
 header("HTTP/1.0 201 Success");
 ob_end_flush();

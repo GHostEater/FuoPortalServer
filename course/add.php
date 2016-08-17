@@ -19,9 +19,10 @@ $levelId = $_GET ['levelId'];
 $departmentId = $_GET['departmentId'];
 $prerequisiteFor = $_GET['prerequisiteFor'];
 $type = $_GET['type'];
+$collegeId = $_GET['collegeId'];
 
-$query = "insert into course_info (code,title,unit,semester,levelId,departmentId,type)
-VALUES('$code','$title','$unit','$semester','$levelId','$departmentId','$type')";
+$query = "insert into course_info (code,title,unit,semester,levelId,departmentId,type,collegeId)
+VALUES('$code','$title','$unit','$semester','$levelId','$departmentId','$type','$collegeId')";
 mysqli_query($con,$query)or die("Unable To Execute");
 
 header("HTTP/1.0 201 Success");
